@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
+import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* La Navbar est affichée sur toutes les pages */}
+        <Navbar />
+
+        {/* Le contenu spécifique à chaque page est rendu ici */}
+        <main>{children}</main>
+
+        {/* Le Footer est affiché sur toutes les pages */}
+        <Footer />
       </body>
     </html>
   );

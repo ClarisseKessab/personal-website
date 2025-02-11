@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "O'Travel",
+    "meta-title": "Mon portfolio personnel en Next.js.",
+    "slug": "O'Travel",
+    "description": "Mon portfolio personnel en Next.js.",
+    "meta-description": "Mon portfolio personnel en Next.js.",
+    "image": "/images/portfolio.png",
+    "images": [
+      "/images/portfolio_1.png",
+      "/images/portfolio_2.png",
+      "/images/portfolio_3.png"
+    ],
+    "stack":[],
+    "context": "Projet personnel pour présenter mes compétences.",
+    "features": [
+      "Présentation de mes projets",
+      "Design responsive",
+      "Utilisation de Next.js et TypeScript"
+    ],
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/moi/portfolio",
+    "demo": "https://monportfolio.com",
+    "tags":["Front-End", "UX/UI", "Développement", "Site"]
+  }
+
+]

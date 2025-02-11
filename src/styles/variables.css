@@ -1,0 +1,14 @@
+:root {
+  /* Couleurs */
+  --primary-color: hsl(204, 70%, 53%);
+  --secondary-color: #2ecc71;
+
+  /* Fonts */
+  --font-family: 'Helvetica', sans-serif;
+  --heading-font-size: 2rem;
+  --body-font-size: 1rem;
+
+  /* Spacing */
+  --spacing-unit: 16px;
+  --border-radius: 8px;
+}
