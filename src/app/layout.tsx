@@ -21,19 +21,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         {/* La Navbar est affichée sur toutes les pages */}
         <Navbar />
 
-        {/* Le contenu spécifique à chaque page est rendu ici */}
-        <main>{children}</main>
+        {/* Le contenu spécifique à chaque page pousse le footer vers le bas */}
+        <main className="flex-1 children">{children}</main>
 
-        {/* Le Footer est affiché sur toutes les pages */}
+        {/* Le Footer est affiché en bas */}
         <Footer />
       </body>
     </html>

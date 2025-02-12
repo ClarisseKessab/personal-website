@@ -1,14 +1,34 @@
+/* Importations de typographies */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
 :root {
   /* Couleurs */
-  --primary-color: hsl(204, 70%, 53%);
-  --secondary-color: #2ecc71;
+  --light: #FBF6EF;
+  --dark: #020700;
+  --green:#D8FF7B;
+  --blue:#D0EEF9;
+  --dark-blue:#4E61F5;
+  --violet:#CB89FF;
+
 
   /* Fonts */
-  --font-family: 'Helvetica', sans-serif;
-  --heading-font-size: 2rem;
-  --body-font-size: 1rem;
+  --font-family-heading:'Oswald', sans-serif;
+  --font-family: 'Noto Sans', sans-serif;
+  --heading1-font-size: 48px;
+  --heading2-font-size: 32px;
+  --heading3-font-size: 24px;
+  --heading4-font-size: 20px;
+  --body-font-size: 16px;
+  --xsbody-font-size: 14px;
 
   /* Spacing */
-  --spacing-unit: 16px;
-  --border-radius: 8px;
+  --spacing-XS: 8px;
+  --spacing-S: 16px;
+  --spacing-M: 32px;
+  --spacing-L: 64px;
+  --spacing-XL: 128px;
+
+  --border-Sradius: 8px;
+  --border-Mradius: 20px;
 }

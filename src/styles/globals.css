@@ -4,21 +4,42 @@
 
 @import './variables.css';
 @import './components/navbar.css';
+@import './components/footer.css';
+@import './components/buttons.css';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+/* @media (prefers-color-scheme: light){} => Pour définir un thème en fonction du navigateur */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ededed;
+:root {
+    --background: var(--light);
     --foreground: #000000;
   }
+
+.children{
+margin-inline: var(--spacing-L);
+
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Fait en sorte que le contenu pousse le footer en bas */
 }
