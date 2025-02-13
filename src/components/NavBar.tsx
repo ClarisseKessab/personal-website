@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <div className="logo">
-        <img src="/assets/Logo.png" alt="Logo" className="logo-img" />
+        <img src="/assets/Logo.png" alt="Logo" className="logo-img"/>
       </div>
       <div className="links-nav">
         <Link href="/" className={pathname === "/" ? "link-active" : "link-p"}>Accueil</Link>
