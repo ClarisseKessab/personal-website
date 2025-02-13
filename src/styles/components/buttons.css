@@ -8,5 +8,27 @@
 
 .btn-primary{
   background-color: var(--dark-blue);
-  color: var(--light);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover{
+  background-color: var(--blue);
+  color: var(--dark);
+}
+
+.btn-hero{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding-inline: 10px;
+  font-weight: 600;
+  padding-block: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover{
+  background-color: var(--blue);
+  color: var(--dark);
+  transform: scale(1.05);
 }

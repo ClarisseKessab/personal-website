@@ -1,4 +1,3 @@
-
 :root {
   /* Couleurs */
   --light: #FFF4E4;
@@ -8,7 +7,6 @@
   --blue:#D0EEF9;
   --dark-blue:#4E61F5;
   --violet:#CB89FF;
-
 
   /* Fonts */
   --font-family-heading:'Oswald', sans-serif;
@@ -30,3 +28,24 @@
   --border-Sradius: 8px;
   --border-Mradius: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --heading1-font-size: 32px !important;
+    --heading2-font-size: 24px !important;
+    --heading3-font-size: 20px !important;
+    --heading4-font-size: 18px !important;
+    --body-font-size: 14px !important;
+    --xsbody-font-size: 12px !important;
+
+    --spacing-XS: 4px !important;
+    --spacing-S: 8px !important;
+    --spacing-M: 16px !important;
+    --spacing-L: 32px !important;
+    --spacing-XL: 64px !important;
+
+    --border-Sradius: 6px !important;
+    --border-Mradius: 12px !important;
+  }
+}
+

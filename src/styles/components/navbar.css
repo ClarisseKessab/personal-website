@@ -13,15 +13,18 @@
 }
 
 .logo{
-
+  width:100px;
 }
 
-.logo-img{
-  width:110px;
-}
 
 .link-p{
   font-weight:600;
+  transition: all 0.3s ease;
+}
+
+.link-p:hover{
+  font-weight:600;
+  color: var(--violet);
 }
 
 .link-p .link-active{

@@ -21,10 +21,47 @@
 }
 
 .text-work-hero{
-  font-size:var(--heading3-font-size);
+  font-size:var(--heading1-font-size);
   font-family: var(--font-family-heading);
-  font-weight: 200;
+  font-weight: 800;
   width:70%;
   text-align: center;
+}
 
+.texts-competences-hero{
+  margin-top: var(--spacing-S);
+  display: flex;
+  gap:10px;
+  align-items: center;
+}
+
+.texts-competences-hero h2{
+  font-weight:400;
+}
+
+.elements-hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .text-work-hero{
+    font-size:var(--heading1-font-size);
+    font-family: var(--font-family-heading);
+    font-weight: 800;
+    width:70%;
+    text-align: center;
+  }
+
+  .texts-competences-hero{
+    margin-top: var(--spacing-S);
+    font-size:12px;
+    display: flex;
+    gap:5px;
+    align-items: center;
+  }
 }
