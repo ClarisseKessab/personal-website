@@ -17,6 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Clarisse K - Développeuse Front-End",
   description: "Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.",
+  openGraph: {
+    title: 'Clarisse K - Développeuse Front-End',
+    description: 'Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.',
+    images: [
+      {
+        url: '../../public/image-website-share.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Développeur fullstack - Illustration',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export const viewport = {
