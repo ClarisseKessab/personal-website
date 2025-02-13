@@ -2,8 +2,9 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: var(--spacing-M);
-  margin-inline: var(--spacing-L);
+  padding-block: var(--spacing-M);
+  padding-inline: var(--spacing-L);
+  background-color: var(--white);
 }
 
 .links-nav{
@@ -31,4 +32,9 @@
   color: var(--dark-blue);
   font-weight:600;
 
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark);
 }

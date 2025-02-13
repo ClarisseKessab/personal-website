@@ -1,0 +1,30 @@
+.hero-section{
+  background-color: var(--light);
+  border-radius: var(--border-Mradius);
+  height:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texts-hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-name-hero{
+  font-size:var(--heading3-font-size);
+  font-weight:400;
+  text-align: center;
+}
+
+.text-work-hero{
+  font-size:var(--heading3-font-size);
+  font-family: var(--font-family-heading);
+  font-weight: 200;
+  width:70%;
+  text-align: center;
+
+}

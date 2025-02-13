@@ -1,10 +1,8 @@
-/* Importations de typographies */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-
 
 :root {
   /* Couleurs */
-  --light: #FBF6EF;
+  --light: #FFF4E4;
+  --white: #FFFFFF;
   --dark: #020700;
   --green:#D8FF7B;
   --blue:#D0EEF9;

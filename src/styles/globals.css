@@ -1,11 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Importations de typographies */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Oswald:wght@200..700&display=swap');
 
+/* Variable */
 @import './variables.css';
+
+/* Components */
 @import './components/navbar.css';
 @import './components/footer.css';
 @import './components/buttons.css';
+
+/* Pages */
+@import './pages/accueil.css';
+
 
 :root {
   --background: #ffffff;
@@ -14,24 +20,30 @@
 /* @media (prefers-color-scheme: light){} => Pour définir un thème en fonction du navigateur */
 
 :root {
-    --background: var(--light);
+    --background: var(--white);
     --foreground: #000000;
   }
 
 .children{
 margin-inline: var(--spacing-L);
+}
 
+.footer{
+  background-color: var(--white);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 #__next {
@@ -42,4 +54,17 @@ html, body {
 
 main {
   flex: 1; /* Fait en sorte que le contenu pousse le footer en bas */
+}
+
+body {
+  font-family: var(--font-family), sans-serif; /* Applique Noto Sans */
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-heading), sans-serif;
+  margin:0;
+}
+
+p{
+  margin:0;
 }
