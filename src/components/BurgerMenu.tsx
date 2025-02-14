@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,10 @@ const BurgerMenu = () => {
         <div className="overlay">
         <div className="close-burgernav"onClick={toggleMenu}><i className="fa-solid fa-x"></i></div>
           <div className="links-burgernav">
-            <a className="link-burgernav" href="/a-propos">À propos</a>
-            <a className="link-burgernav" href="/projets">Projets</a>
-            <a className="link-burgernav" href="/contact">Contact</a>
-            <a className="btn-burger" href="/contact">Me contacter</a>
+            <Link className="link-burgernav" href="/a-propos">À propos</Link>
+            <Link className="link-burgernav" href="/projets">Projets</Link>
+            <Link className="link-burgernav" href="/contact">Contact</Link>
+            <Link className="btn-burger" href="/contact">Me contacter</Link>
           </div>
 
         </div>
