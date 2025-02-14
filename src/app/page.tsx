@@ -1,5 +1,8 @@
+import SliderSkills from '@/components/SliderSkills';
+
 export default function Home(){
   return(
+    <>
     <div className="hero-section">
     <div className="elements-hero">
     <div className="texts-hero">
@@ -18,5 +21,12 @@ export default function Home(){
     </div>
     </div>
     </div>
+    <div className="skills-section">
+      <h2 className="skill-title">Compétences techniques pour des projets innovants et performants</h2>
+      <div className="skills">
+        <SliderSkills/>
+      </div>
+    </div>
+    </>
   );
 }

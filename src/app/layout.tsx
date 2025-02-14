@@ -1,8 +1,9 @@
+// layout.tsx (serveur)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
+import RootLayout from "./RootLayout";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,19 +17,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Clarisse K - Développeuse Front-End",
-  description: "Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.",
+  description:
+    "Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.",
   openGraph: {
-    title: 'Clarisse K - Développeuse Front-End',
-    description: 'Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.',
+    title: "Clarisse K - Développeuse Front-End",
+    description:
+      "Clarisse, développeuse fullstack à Nantes, spécialisée en création de sites web modernes et performants. Découvrez mes projets et mon expertise technique.",
     images: [
       {
-        url: '../../public/image-website-share.jpg',
+        url: "../../public/image-website-share.jpg",
         width: 1200,
         height: 630,
-        alt: 'Développeur fullstack - Illustration',
+        alt: "Développeur fullstack - Illustration",
       },
     ],
-    type: 'website',
+    type: "website",
   },
 };
 
@@ -38,16 +41,14 @@ export const viewport = {
   maximumScale: 1,
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className="h-full">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen h-full`}>
-        <Navbar />
-        <main className="children flex-1">{children}</main>
-
-        <Footer />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen h-full` }
+        suppressHydrationWarning
+      >
+        <RootLayout>{children}</RootLayout>
       </body>
     </html>
   );

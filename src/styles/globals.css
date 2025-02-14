@@ -5,9 +5,11 @@
 @import './variables.css';
 
 /* Components */
+@import './components/burger-nav.css';
 @import './components/navbar.css';
 @import './components/footer.css';
 @import './components/buttons.css';
+@import './components/slider-skills.css';
 
 /* Pages */
 @import './pages/accueil.css';

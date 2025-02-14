@@ -1,0 +1,40 @@
+.skills-slider{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+}
+
+.skill-slider{
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scroll 150s linear infinite;
+}
+
+.element-skill{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-skill{
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.text-skill{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

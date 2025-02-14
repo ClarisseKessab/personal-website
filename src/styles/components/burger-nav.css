@@ -1,0 +1,47 @@
+/* Overlay de fond rouge */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--green);
+  z-index: 999;
+  overflow-y: hidden;
+}
+
+.close-burgernav{
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+  right:35px;
+}
+
+.links-burgernav {
+  height: 100vh;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:50px
+}
+
+.link-burgernav {
+  font-size:20px;
+}
+.btn-burger{
+  margin-top: 30px;
+}
+.fa-bars{
+  color:var(--dark);
+  font-size: 30px;
+}
+
+.burger-menu{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}

@@ -1,3 +1,5 @@
+/* Accueil */
+/* Partie Hero */
 .hero-section{
   background-color: var(--light);
   border-radius: var(--border-Mradius);
@@ -47,8 +49,27 @@
   gap: 50px;
 }
 
+/* Partie Skills */
+
+.skills-section{
+  margin-top: var(--spacing-M);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-S);
+}
+
+.skill-title{
+  font-size:var(--heading3-font-size);
+
+}
+
+
+/* Responsive */
 @media screen and (max-width: 768px) {
 
+  /* Partie Hero */
   .text-work-hero{
     font-size:var(--heading1-font-size);
     font-family: var(--font-family-heading);
@@ -63,5 +84,22 @@
     display: flex;
     gap:5px;
     align-items: center;
+  }
+
+
+  /* Partie Skills */
+
+  .skills-section{
+    margin-top: var(--spacing-M);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-S);
+  }
+
+  .skill-title{
+    font-size:20px;
+    text-align: center;
   }
 }

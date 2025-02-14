@@ -32,3 +32,13 @@
   color: var(--dark);
   transform: scale(1.05);
 }
+
+.btn-burger{
+  padding-inline: var(--spacing-S);
+  padding-block: var(--spacing-XS);
+  border-radius: var(--border-Sradius);
+  font-weight: 400;
+  font-size: var(--spacing-M);
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
