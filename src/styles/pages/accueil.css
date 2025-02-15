@@ -60,6 +60,17 @@
   gap: var(--spacing-S);
 }
 
+/* Partie Services */
+
+.services-section{
+  margin-top:30px;
+}
+
+/* Partie A propos */
+
+.a-propos-section{
+  margin-top:30px;
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -100,4 +111,10 @@
     align-items: center;
     gap: var(--spacing-S);
   }
+
+  /* Partie Services */
+
+.services-section{
+  margin-top:30px;
+}
 }

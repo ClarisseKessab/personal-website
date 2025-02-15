@@ -1,5 +1,6 @@
 import SliderSkills from '@/components/SliderSkills';
 import CardService from '@/components/CardService';
+import Accordeon from '@/components/Accordeon';
 
 export default function Home(){
   return(
@@ -27,11 +28,13 @@ export default function Home(){
       <div className="skills">
         <SliderSkills/>
       </div>
+      </div>
       <div className="services-section">
-        <h2 className="h2-title">Mes services</h2>
         <CardService/>
       </div>
-    </div>
+      <div className="a-propos-section">
+        <Accordeon/>
+      </div>
     </>
   );
 }

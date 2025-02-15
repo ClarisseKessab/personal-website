@@ -13,7 +13,7 @@ const skills = [
 
 const SliderSkills: React.FC = () => {
 
-  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills]; // x4
+  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills]; // x4
 
   return (
     <div className="skills-slider">
