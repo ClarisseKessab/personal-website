@@ -64,6 +64,10 @@
 /* Responsive */
 @media screen and (max-width: 768px) {
 
+  body{
+    overflow-x:hidden;
+  }
+
   /* Partie Hero */
   .hero-section{
     height:70vh;
