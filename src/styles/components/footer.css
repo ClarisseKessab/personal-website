@@ -1,7 +1,8 @@
 .footer{
   display:flex;
   justify-content: center;
-  margin-block: var(--spacing-S);
+  padding-block: var(--spacing-S);
+
 }
 
 @media screen and (max-width: 768px) {

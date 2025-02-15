@@ -7,6 +7,7 @@
   --blue:#D0EEF9;
   --dark-blue:#4E61F5;
   --violet:#CB89FF;
+  --black:#1B1B1B;
 
   /* Fonts */
   --font-family-heading:'Oswald', sans-serif;
@@ -34,6 +35,10 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.text-white{
+  color:var(--white)
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --heading1-font-size: 32px !important;
@@ -55,6 +60,6 @@
   .h2-title{
     font-family: 'Oswald', sans-serif;
     font-size:20px;
-    text-align: center;
+  text-align: center;
   }
 }

@@ -49,6 +49,13 @@
   gap: 50px;
 }
 
+.icon-design-fire{
+  position: relative;
+  font-size:50px;
+  right:220px;
+  top:150px;
+}
+
 /* Partie Skills */
 
 .skills-section{
@@ -64,6 +71,9 @@
 
 .services-section{
   margin-top:30px;
+  background-color: var(--dark-blue);
+  padding-block:75px;
+  border-radius: var(--border-Mradius);
 }
 
 /* Partie A propos */
@@ -100,6 +110,13 @@
     align-items: center;
   }
 
+  .icon-design-fire{
+    position: relative;
+    font-size:30px;
+    right: 100px;
+    top:100px;
+  }
+
 
   /* Partie Skills */
 
@@ -116,5 +133,8 @@
 
 .services-section{
   margin-top:30px;
+  background-color: var(--black);
+  padding-block:40px;
+  border-radius: var(--border-Mradius);
 }
 }
