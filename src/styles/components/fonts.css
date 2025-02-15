@@ -1,0 +1,23 @@
+.violet-text{
+  color: var(--violet);
+}
+
+.green-text{
+  color: var(--green);
+}
+
+.dark-blue-text{
+  color: var(--dark-blue);
+}
+
+.green-high-text{
+  background-color: var(--green);
+}
+
+.violet-high-text{
+  background-color: var(--violet);
+}
+
+.dark-blue-high-text{
+  background-color: var(--dark-blue);
+}

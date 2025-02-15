@@ -1,4 +1,5 @@
 import SliderSkills from '@/components/SliderSkills';
+import CardService from '@/components/CardService';
 
 export default function Home(){
   return(
@@ -7,7 +8,7 @@ export default function Home(){
     <div className="elements-hero">
     <div className="texts-hero">
       <div className="text-name-hero">Moi, cest Clarisse 👋</div>
-      <h1 className="text-work-hero">Développeuse Front-End basée à Nantes</h1>
+      <h1 className="text-work-hero"><span className="green-high-text">Développeuse</span> Front-End basée à <span className="violet-text">Nantes</span></h1>
       <div className="texts-competences-hero">
         <h2>Développement</h2>
         <p>✶</p>
@@ -22,9 +23,13 @@ export default function Home(){
     </div>
     </div>
     <div className="skills-section">
-      <h2 className="skill-title">Compétences techniques pour des projets innovants et performants</h2>
+      <h2 className="h2-title">Compétences techniques pour des projets innovants et performants</h2>
       <div className="skills">
         <SliderSkills/>
+      </div>
+      <div className="services-section">
+        <h2 className="h2-title">Mes services</h2>
+        <CardService/>
       </div>
     </div>
     </>

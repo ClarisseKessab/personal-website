@@ -1,9 +1,8 @@
 .skills-slider{
   overflow: hidden;
-  white-space: nowrap;
   width: 100%;
   background: white;
-  padding: 20px 0;
+  margin-top: 20px;
 }
 
 .skill-slider{

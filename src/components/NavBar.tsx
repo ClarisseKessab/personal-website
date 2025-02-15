@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 // components/NavBar.tsx
 "use client";
 
@@ -18,7 +19,9 @@ const Navbar: React.FC<NavbarProps> = ({ isMobile }) => {
   return (
     <nav className="nav">
       <div className="logo">
+        <a href="/">
         <Image src="/assets/Logo.png" alt="Logo" className="logo-img" width={110} height={28.19} layout="intrinsic" />
+        </a>
       </div>
 
       {isMobile ? (

@@ -6,10 +6,13 @@
 
 /* Components */
 @import './components/burger-nav.css';
+@import './components/fonts.css';
 @import './components/navbar.css';
 @import './components/footer.css';
 @import './components/buttons.css';
 @import './components/slider-skills.css';
+@import './components/card-services.css';
+
 
 /* Pages */
 @import './pages/accueil.css';
@@ -24,6 +27,7 @@
 :root {
     --background: var(--white);
     --foreground: #000000;
+    overflow-x:hidden;
   }
 
 .children{

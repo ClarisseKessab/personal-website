@@ -29,6 +29,11 @@
   --border-Mradius: 20px;
 }
 
+.h2-title{
+  font-size:var(--heading3-font-size);
+  font-family: 'Oswald', sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --heading1-font-size: 32px !important;
@@ -47,5 +52,9 @@
     --border-Sradius: 6px !important;
     --border-Mradius: 12px !important;
   }
+  .h2-title{
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+    text-align: center;
+  }
 }
-

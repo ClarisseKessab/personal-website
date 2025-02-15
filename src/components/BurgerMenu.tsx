@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link';
 
 const BurgerMenu = () => {
@@ -7,6 +7,21 @@ const BurgerMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.classList.add("no-scroll");
+      document.body.classList.add("no-scroll");
+    } else {
+      document.documentElement.classList.remove("no-scroll");
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.documentElement.classList.remove("no-scroll");
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
 
   return (
     <div className="burger-menu">
@@ -22,7 +37,7 @@ const BurgerMenu = () => {
             <Link className="link-burgernav" href="/a-propos">À propos</Link>
             <Link className="link-burgernav" href="/projets">Projets</Link>
             <Link className="link-burgernav" href="/contact">Contact</Link>
-            <Link className="btn-burger" href="/contact">Me contacter</Link>
+            <Link className="btn btn-burger" href="/contact">Me contacter</Link>
           </div>
 
         </div>
