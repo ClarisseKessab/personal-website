@@ -38,31 +38,27 @@ const ContactForm = () => {
     setSuccessMessage(null);
     setErrorMessage(null);
 
-    if (!recaptchaValue) {
-      setErrorMessage("Veuillez valider le CAPTCHA.");
-      return;
-    }
-
     try {
-      const formDataWithCaptcha = { ...data, recaptchaValue };
+      console.log("Données envoyées à l'API:", data); // Vérifiez ce qui est envoyé
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-      const response = await emailjs.send(
-        "service_xh7x8vd",
-        "template_contact_mail",
-        formDataWithCaptcha,
-        "lbuTFO_fMtrEBbCIX"
-      );
-
-      if (response.status === 200) {
+      if (response.ok) {
         setSuccessMessage("Message envoyé avec succès !");
         reset();
       } else {
-        throw new Error("Erreur lors de l'envoi du message");
+        const errorData = await response.json();
+        console.error("Erreur de l'API:", errorData);
+        throw new Error(errorData.error || "Erreur lors de l'envoi du message");
       }
     } catch (error) {
       setErrorMessage("Erreur lors de l'envoi du message. Réessayez plus tard.");
     }
   };
+
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
