@@ -20,6 +20,8 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
+  const [lastSubmitTime, setLastSubmitTime] = useState<number | null>(null);
+
 
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ;
   if (!siteKey) {
@@ -41,6 +43,12 @@ const ContactForm = () => {
   };
 
   const onSubmit = async (data: ContactFormData) => {
+    const now = Date.now();
+    if (lastSubmitTime && now - lastSubmitTime < 30000) {
+      setErrorMessage("Vous devez attendre avant de soumettre à nouveau.");
+      return;
+    }
+
     setSuccessMessage(null);
     setErrorMessage(null);
 
@@ -64,6 +72,7 @@ const ContactForm = () => {
       if (result.status === 200) {
         setSuccessMessage("Message envoyé avec succès !");
         reset();
+        setLastSubmitTime(now);
       } else {
         throw new Error("Erreur lors de l'envoi du message");
       }
