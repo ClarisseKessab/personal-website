@@ -73,8 +73,6 @@ const ContactForm = () => {
     }
   };
 
-  console.log("ReCAPTCHA Site Key:", siteKey);
-
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
       <div>
