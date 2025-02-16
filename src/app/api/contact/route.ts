@@ -9,7 +9,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Tous les champs sont obligatoires, y compris le reCAPTCHA." }, { status: 400 });
     }
 
-    const recaptchaSecret = "6LcK99gqAAAAACwjSazNmJAjsTh3N4XmWUgm1ReA";
+    const recaptchaSecret = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
     const recaptchaUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${recaptcha}`;
 
     const recaptchaResponse = await fetch(recaptchaUrl, { method: "POST" });

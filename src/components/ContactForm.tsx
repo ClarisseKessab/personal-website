@@ -38,27 +38,35 @@ const ContactForm = () => {
     setSuccessMessage(null);
     setErrorMessage(null);
 
-    try {
-      console.log("Données envoyées à l'API:", data); // Vérifiez ce qui est envoyé
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    if (!recaptchaValue) {
+      setErrorMessage("Veuillez compléter le reCAPTCHA.");
+      return;
+    }
 
-      if (response.ok) {
+    try {
+      // Utilisation d'EmailJS pour envoyer l'email
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+      );
+
+      if (result.status === 200) {
         setSuccessMessage("Message envoyé avec succès !");
         reset();
       } else {
-        const errorData = await response.json();
-        console.error("Erreur de l'API:", errorData);
-        throw new Error(errorData.error || "Erreur lors de l'envoi du message");
+        throw new Error("Erreur lors de l'envoi du message");
       }
     } catch (error) {
+      console.error(error);
       setErrorMessage("Erreur lors de l'envoi du message. Réessayez plus tard.");
     }
   };
-
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
@@ -82,7 +90,7 @@ const ContactForm = () => {
 
       <div>
         <ReCAPTCHA
-          sitekey="6LcK99gqAAAAAMgHY07BbKKqCmc-Hb_HRZ2cUeaB"
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
           onChange={handleRecaptchaChange}
         />
       </div>
