@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import { useState } from "react";
@@ -20,6 +20,12 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
+
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ;
+  if (!siteKey) {
+    console.error("La clé reCAPTCHA est manquante !");
+    return <p>Erreur : La clé reCAPTCHA est manquante.</p>;
+  }
 
   const {
     register,
@@ -44,7 +50,6 @@ const ContactForm = () => {
     }
 
     try {
-      // Utilisation d'EmailJS pour envoyer l'email
       const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
@@ -68,8 +73,7 @@ const ContactForm = () => {
     }
   };
 
-  console.log('ReCAPTCHA Site Key:', process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
-
+  console.log("ReCAPTCHA Site Key:", siteKey);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
@@ -91,11 +95,9 @@ const ContactForm = () => {
         {errors.message && <p className="error">{errors.message.message}</p>}
       </div>
 
-
       <div>
-
         <ReCAPTCHA
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
+          sitekey={siteKey}
           onChange={handleRecaptchaChange}
         />
       </div>
