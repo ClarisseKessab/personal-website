@@ -40,6 +40,11 @@
 
 .icon-accordeon {
   font-size: 30px;
+  color:var(--white);
+  background-color: var(--dark);
+  padding-inline: 10px;
+  padding-bottom:4px;
+  border-radius: 20px;
 }
 
 .section-title.active {
@@ -48,6 +53,12 @@
 
 .accordeon-text-content {
   width: 90%;
+}
+
+.accordeon-content {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 }
 
 @media (max-width: 768px) {

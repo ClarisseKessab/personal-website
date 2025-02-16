@@ -9,7 +9,7 @@ export default function CardService(){
     <>
     <div className="cards-service">
     {services.map((service, index) => (
-          <div className="element-service" key={index} style={{ backgroundColor: `var(--${service.color})` }}>
+          <div className="element-service" key={index} style={{ backgroundColor: `var(--white)` }}>
             <p className="icon-service">{service.src}</p>
             <h3 className="title-service">{service.title}</h3>
             <p className="desc-service">{service.desc}</p>

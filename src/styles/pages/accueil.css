@@ -70,8 +70,7 @@
 /* Partie Services */
 
 .services-section{
-  margin-top:30px;
-  background-color: var(--dark-blue);
+  margin-bottom:30px;
   padding-block:75px;
   border-radius: var(--border-Mradius);
 }
@@ -79,6 +78,7 @@
 /* Partie A propos */
 
 .a-propos-section{
+  color:var(--black);
   margin-top:30px;
 }
 
