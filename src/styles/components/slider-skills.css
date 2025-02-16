@@ -29,6 +29,11 @@
   color: #333;
 }
 
+.skill-slider::after{
+  content:"";
+  display: flex;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);

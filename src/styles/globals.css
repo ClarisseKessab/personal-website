@@ -6,6 +6,7 @@
 
 /* Components */
 @import './components/burger-nav.css';
+@import './components/form-contact.css';
 @import './components/fonts.css';
 @import './components/navbar.css';
 @import './components/footer.css';

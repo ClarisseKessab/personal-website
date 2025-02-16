@@ -1,3 +1,9 @@
-export default function Home(){
-  return("contact");
+import ContactFormComponent from '@/components/ContactForm';
+
+export default function ContactPage() {
+  return (
+    <>
+      <ContactFormComponent />
+    </>
+  );
 }

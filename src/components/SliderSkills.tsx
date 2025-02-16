@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const skills = [
+  { src: "/skills/semrush.png", alt: "Semrush" },
+  { src: "/skills/adobecreative.png", alt: "Adobe Creative" },
   { src: "/skills/Java.png", alt: "Java" },
   { src: "/skills/Html5.png", alt: "HTML" },
   { src: "/skills/Css3.png", alt: "CSS" },
@@ -13,13 +15,19 @@ const skills = [
 
 const SliderSkills: React.FC = () => {
 
-  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills, ...skills]; // x4
+  const duplicatedSkills = [...skills, ...skills];
 
   return (
     <div className="skills-slider">
       <div className="skill-slider">
         {duplicatedSkills.map((skill, index) => (
           <div className="element-skill" key={index}>
+            <img src={skill.src} alt={skill.alt} className="logo-skill" />
+            <span className="text-skill">{skill.alt}</span>
+          </div>
+        ))}
+        {skills.map((skill, index) => (
+          <div className="element-skill" key={`second-${index}`}>
             <img src={skill.src} alt={skill.alt} className="logo-skill" />
             <span className="text-skill">{skill.alt}</span>
           </div>
