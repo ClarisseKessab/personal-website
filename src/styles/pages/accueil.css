@@ -133,8 +133,12 @@
 
 .services-section{
   margin-top:30px;
-  background-color: var(--black);
+  background-color: var(--blue);
   padding-block:40px;
   border-radius: var(--border-Mradius);
+}
+
+.h2-service{
+  padding-inline: 20px;
 }
 }

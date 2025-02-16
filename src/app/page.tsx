@@ -25,7 +25,7 @@ export default function Home(){
     </div>
     </div>
     <div className="skills-section">
-      <h2 className="h2-title">Compétences techniques pour des projets innovants et performants</h2>
+      <h2 className="h2-title">Compétences techniques pour des projets innovants et <span className="green-high-text">performants</span></h2>
       <div className="skills">
         <SliderSkills/>
       </div>
@@ -34,7 +34,7 @@ export default function Home(){
         <Accordeon/>
       </div>
       <div className="services-section">
-        <h2 className="h2-title">Une approche technique pour des projets web créatifs</h2>
+        <h2 className="h2-title h2-service">Une <span className="dark-blue-text">approche technique</span> pour des <span className="green-high-text">projets web</span> créatifs</h2>
         <CardService/>
       </div>
     </>
