@@ -9,8 +9,10 @@ import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const contactSchema = z.object({
+  firstname: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
   name: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
   email: z.string().email("Email invalide"),
+  phone: z.string().regex(/^\+?[0-9\s-]{8,15}$/, "Numéro de téléphone invalide").optional(),
   message: z.string().min(10, "Le message doit contenir au moins 10 caractères"),
 });
 
@@ -62,8 +64,10 @@ const ContactForm = () => {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         {
+          firstname: data.firstname,
           name: data.name,
           email: data.email,
+          phone: data.phone,
           message: data.message,
         },
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
@@ -84,22 +88,34 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-      <div>
-        <label htmlFor="name">Nom</label>
-        <input id="name" {...register("name")} />
-        {errors.name && <p className="error">{errors.name.message}</p>}
+      <div className="identity-form">
+        <div className="form-contact">
+          <label htmlFor="firstname" className="label-contact">Prénom*</label>
+          <input id="firstname" {...register("firstname")} placeholder="Prénom" className="exemple-contact"/>
+          {errors.firstname && <p className="error">{errors.firstname.message}</p>}
+        </div>
+        <div className="form-contact">
+          <label htmlFor="name" className="label-contact">Nom*</label>
+          <input id="name" {...register("name")} placeholder="Nom" className="exemple-contact"/>
+          {errors.name && <p className="error">{errors.name.message}</p>}
+        </div>
       </div>
-
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="email" {...register("email")} />
+      <div className="form-contact">
+        <label htmlFor="email" className="label-contact">Email*</label>
+        <input id="email" type="email" {...register("email")} placeholder="Email" className="exemple-contact"/>
         {errors.email && <p className="error">{errors.email.message}</p>}
       </div>
+      <div className="form-contact">
+        <label htmlFor="phone" className="label-contact">Téléphone</label>
+        <input id="phone" type="phone" {...register("phone")} placeholder="Téléphone" className="exemple-contact"/>
+        {errors.phone && <p className="error">{errors.phone.message}</p>}
+      </div>
 
-      <div>
-        <label htmlFor="message">Message</label>
-        <textarea id="message" {...register("message")} />
+      <div className="form-contact">
+        <label htmlFor="message" className="label-contact">Message*</label>
+        <textarea id="message" {...register("message")} placeholder="Message" className="exemple-contact"/>
         {errors.message && <p className="error">{errors.message.message}</p>}
+        <p className="criteres-p">Min. 120 caractères</p>
       </div>
 
       <div>
@@ -109,8 +125,8 @@ const ContactForm = () => {
         />
       </div>
 
-      <button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Envoi en cours..." : "Envoyer"}
+      <button type="submit" disabled={isSubmitting} className="btn btn-primary">
+        {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
       </button>
 
       {successMessage && <p className="success">{successMessage}</p>}

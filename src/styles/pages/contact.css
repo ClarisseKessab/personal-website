@@ -1,0 +1,62 @@
+.contact{
+  background-color:var(--light);
+  padding-block: 60px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+.texts-contact{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-bottom: 50px;
+}
+
+.contact-title{
+  color:var(--dark);
+}
+
+.icon-design-fire-contact{
+  font-size: 40px;
+}
+
+.content-contact{
+  display: flex;
+  justify-content: center;
+}
+
+.informations-contact{
+
+}
+
+.icon-réseaux{
+  font-size:30px;
+}
+.label-contact{
+  font-size:13px;
+  color: #414040;
+}
+
+.exemple-contact{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: #737373;
+}
+.criteres-p{
+  font-size:14px;
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.form-contact{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+@media screen and (max-width: 768px) {
+
+}
