@@ -12,7 +12,7 @@ const contactSchema = z.object({
   firstname: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
   name: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
   email: z.string().email("Email invalide"),
-  phone: z.string().regex(/^\+?[0-9\s-]{8,15}$/, "Numéro de téléphone invalide").optional(),
+  phone: z.string().regex(/^\+?[0-9\s-]{8,15}$/, "Numéro de téléphone invalide").or(z.literal("")).optional(),
   message: z.string().min(10, "Le message doit contenir au moins 10 caractères"),
 });
 
