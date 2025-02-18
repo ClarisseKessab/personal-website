@@ -1,7 +1,4 @@
 import ContactFormComponent from '@/components/ContactForm';
-import Image from 'next/image';
-import { FaLinkedin, FaGithub, FaInstagram  } from "react-icons/fa";
-
 
 export default function ContactPage() {
   return (
