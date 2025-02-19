@@ -43,9 +43,6 @@ const BurgerMenu = () => {
             <Link className="link-burgernav" href="/" onClick={closeMenu}>
               Accueil
             </Link>
-            <Link className="link-burgernav" href="/a-propos" onClick={closeMenu}>
-              À propos
-            </Link>
             <Link className="link-burgernav" href="/projets" onClick={closeMenu}>
               Projets
             </Link>
