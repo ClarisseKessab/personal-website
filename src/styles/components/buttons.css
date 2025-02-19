@@ -51,3 +51,19 @@
 display: inline-block;
 
 }
+
+.btn-cta{
+  background-color: var(--violet);
+  color: var(--dark);
+  padding-inline: 10px;
+  font-weight: 600;
+  padding-block: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover{
+  background-color: var(--blue);
+  color: var(--dark);
+  transform: scale(1.05);
+}

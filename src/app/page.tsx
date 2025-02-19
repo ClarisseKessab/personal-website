@@ -1,6 +1,7 @@
 import SliderSkills from '@/components/SliderSkills';
 import CardService from '@/components/CardService';
 import Accordeon from '@/components/Accordeon';
+import CardProject from '@/components/CardProject';
 
 export default function Home(){
   return(
@@ -36,6 +37,17 @@ export default function Home(){
       <div className="services-section">
         <h2 className="h2-title h2-service">Une <span className="dark-blue-text">approche technique</span> pour des <span className="green-high-text">projets web</span> créatifs</h2>
         <CardService/>
+      </div>
+      <div className="projets-section">
+      <h2 className="h2-title h2-service">D&apos;une idée à la réalité : Mes <span className="dark-blue-text">réalisations</span> digitales</h2>
+      <CardProject limit={4} />
+      </div>
+      <div className="CTA">
+      <div className="CTA-texts">
+        <h2 className="CTA-title text-black"><span className="green-high-text">Contactez-moi</span></h2>
+        <p className="CTA-text">Une question, une opportunité ou simplement envie d’échanger ? 🚀</p>
+      </div>
+      <a className="btn btn-cta">Prenons contact</a>
       </div>
     </>
   );
