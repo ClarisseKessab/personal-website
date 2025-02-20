@@ -1,9 +1,8 @@
 .btn{
-  padding-inline: var(--spacing-S);
-  padding-block: var(--spacing-XS);
-  border-radius: var(--border-Sradius);
+  padding-inline: 20px;
   font-weight: 600;
-  font-size: var(--spacing-S);
+  padding-block: 15px;
+  border-radius: 16px;
 }
 
 .btn-primary{
@@ -37,10 +36,6 @@
   font-size: var(--spacing-M);
   background-color: var(--dark-blue);
   color: var(--white);
-  padding-inline: 10px;
-  font-weight: 600;
-  padding-block: 20px;
-  border-radius: 16px;
 }
 
 .btn-accordeon{

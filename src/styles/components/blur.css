@@ -92,6 +92,9 @@
   bottom:100px;
 }
 
+.bottom-10{
+  bottom:1000px;
+}
 
 @media screen and (max-width: 768px) {
   .blur-little-blue{

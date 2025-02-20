@@ -11,12 +11,17 @@
     "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
     "image": "/taste-explorers/TasteExplorers.png",
     "images": [
-      "/taste-explorers/TasteExplorers.png",
-      "/images/portfolio_2.png",
-      "/images/portfolio_3.png"
+      "/taste-explorers/1.png",
+      "/taste-explorers/2.png",
+      "/taste-explorers/3.png",
+      "/taste-explorers/4.png",
+      "/taste-explorers/5.png",
+      "/taste-explorers/6.png",
+      "/taste-explorers/7.png",
+      "/taste-explorers/8.png"
     ],
     "type":"Développement",
-    "stack":["Ruby On Rails", "Javascript", "Github", "HTML/SCSS", "PostgreSQL","Hébergement sur Heroku","⁠Intégration de l'API OpenAI"],
+    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku","OpenAI"],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
       "Organisation de repas thématiques autour des cuisines du monde",

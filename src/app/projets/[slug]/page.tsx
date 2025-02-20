@@ -40,24 +40,37 @@ export default async function Page({ params }: PageProps) {
     <>
       <div className="projet-title">
         <h1>{projet.title}</h1>
-        <p className=" p-projet">{projet.description}</p>
-      </div>
-      <div className="container-type-projet">
-          <div className="element-type-projet">
-          <FaRegHourglass className="icon-projet" />
-          <p>Projet réalisé en {projet.duration}</p>
-          </div>
-          <div>
-          <FaRegFile className="icon-projet"/>
-          <p>Projet réalisé en {projet.duration}</p>
-          </div>
-          <div>
-          <FaRegUser className="icon-projet"/>
-          <p></p>
-          </div>
+        <p>{projet.description}</p>
+        <div className="btns-projet">
+          <a href={`${projet.github}`}className="btn btn-projet"> Voir le projet</a>
+          <a className="btn btn-projet-secondary"> Des questions ?</a>
         </div>
+      </div>
+      <div className="blur-little-blue right-10"></div>
+      <div className="blur-big-green left-10 top"></div>
         <div className="container-img-projet">
         <img src={projet.image} alt={`Presentation ${projet.title}`} className="image-projet" />
+        </div>
+        <div className="stack-section">
+        <h2>Technologies utilisées</h2>
+        <div className="stack-group">
+        {projet.stack.map((stack, index) => (
+          <div className="element-skill" key={index}>
+            <img src={`/skills/${stack}.png`} alt={projet.title} className="logo-skill" />
+            <span className="text-skill">{stack}</span>
+          </div>
+        ))}
+        </div>
+        </div>
+      <div className="photos-section">
+        <h2>Photos</h2>
+        <div className="photos-group">
+        {projet.images.map((image, index) => (
+          <div className="photo-projet" key={index}>
+            <img src={`${image}`} alt={projet.title} className="img-projet" />
+          </div>
+        ))}
+        </div>
         </div>
 
     </>

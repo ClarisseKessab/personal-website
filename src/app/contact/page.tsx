@@ -3,6 +3,7 @@ import ContactFormComponent from '@/components/ContactForm';
 export default function ContactPage() {
   return (
     <>
+
       <div className="contact">
         <div className="texts-contact">
           <h1 className="h1-title text-white contact-title">Restons en contact</h1>
@@ -13,7 +14,6 @@ export default function ContactPage() {
         <div className="content-contact">
             <ContactFormComponent />
           </div>
-
       </div>
     </>
   );
