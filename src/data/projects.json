@@ -5,8 +5,9 @@
     "meta-title": "Taste Explorers - Création d'application mobile en Ruby On Rails",
     "slug": "taste-explorers",
     "description": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier. L'application permet aux hôtes de partager leurs traditions culinaires et aux explorateurs culinaires de découvrir de nouvelles saveurs lors de repas thématiques.",
+    "descard": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier.",
     "duration":"2 semaines",
-    "team":["Mathieu.L", "Guillaume.A", "Kevin.I"],
+    "team":["Clarisse", "Mathieu.L", "Guillaume.A", "Kevin.I"],
     "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
     "image": "/taste-explorers/TasteExplorers.png",
     "images": [
@@ -14,6 +15,7 @@
       "/images/portfolio_2.png",
       "/images/portfolio_3.png"
     ],
+    "type":"Développement",
     "stack":["Ruby On Rails", "Javascript", "Github", "HTML/SCSS", "PostgreSQL","Hébergement sur Heroku","⁠Intégration de l'API OpenAI"],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
@@ -23,7 +25,7 @@
     ],
     "github": "https://github.com/mathieulecuelle/taste-explorers",
     "demo": "",
-    "tags":["Front-End", "UX/UI", "Dev", "App"]
+    "tags":["Développement","Front-End","Application web" ]
   },
   {
     "id": 2,
@@ -31,6 +33,7 @@
     "meta-title": "SkyBnb - Création de site web en Ruby On Rails",
     "slug": "skybnb",
     "description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements classiques, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
+    "descard": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
     "meta-description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
     "image": "/Skybnb/Skybnb.png",
     "images": [
@@ -38,6 +41,7 @@
       "/images/portfolio_2.png",
       "/images/portfolio_3.png"
     ],
+    "type":"Développement",
     "stack":["Ruby On Rails", "Javascript", "Github", "HTML/SCSS","Bootstrap", "PostgreSQL","Hébergement sur Heroku","Cloudinary (gestion des images)","Mapbox (cartes interactives)"],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
@@ -48,7 +52,7 @@
     ],
     "github": "https://github.com/ClarisseKessab/Skybnb",
     "demo": "",
-    "tags":["Front-End", "Dev", "Site"]
+    "tags":["Front-End", "Développement", "Site web"]
   },
   {
     "id": 3,
@@ -56,6 +60,7 @@
     "meta-title": "Mon portfolio personnel en Next.js.",
     "slug": "otravel",
     "description": "Mon portfolio personnel en Next.js.",
+    "descard": "",
     "meta-description": "Mon portfolio personnel en Next.js.",
     "image": "/OTravel/oTravel.png",
     "images": [
@@ -63,6 +68,7 @@
       "/images/portfolio_2.png",
       "/images/portfolio_3.png"
     ],
+    "type":"UI Design",
     "stack":[],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
@@ -73,7 +79,7 @@
     "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     "github": "https://github.com/moi/portfolio",
     "demo": "https://monportfolio.com",
-    "tags":["Front-End", "UX/UI", "Dev", "Site"]
+    "tags":["Front-End", "UX/UI", "Développement"]
   },
   {
     "id": 4,
@@ -81,13 +87,15 @@
     "meta-title": "Mon portfolio personnel en Next.js.",
     "slug": "otravel",
     "description": "Mon portfolio personnel en Next.js.",
+    "descard": "",
     "meta-description": "Mon portfolio personnel en Next.js.",
-    "image": "/images/portfolio.png",
+    "image": "/Copkers/Copkers.png",
     "images": [
       "/images/portfolio_1.png",
       "/images/portfolio_2.png",
       "/images/portfolio_3.png"
     ],
+    "type":"UI Design",
     "stack":[],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
@@ -98,7 +106,7 @@
     "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     "github": "https://github.com/moi/portfolio",
     "demo": "https://monportfolio.com",
-    "tags":["Front-End", "UX/UI", "Dev", "Site"]
+    "tags":["UX/UI", "Front-End", "Développement"]
   },
   {
     "id": 4,
@@ -113,6 +121,7 @@
       "/images/portfolio_2.png",
       "/images/portfolio_3.png"
     ],
+    "type":"UI Design",
     "stack":[],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [

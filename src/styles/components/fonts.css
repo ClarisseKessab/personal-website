@@ -12,6 +12,7 @@
 
 .green-high-text{
   background-color: var(--green);
+  color:var(--dark);
 }
 
 .violet-high-text{
@@ -21,3 +22,12 @@
 .dark-blue-high-text{
   background-color: var(--dark-blue);
 }
+
+.tag{
+
+}
+
+h3{
+  text-transform: uppercase;
+}
+

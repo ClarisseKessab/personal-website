@@ -1,0 +1,47 @@
+.projet-title{
+  background-color: var(--blue);
+  padding-block: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  gap:20px;
+}
+
+.container-img-projet{
+  width: 100%;
+  background-color: var(--light);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-projet{
+  width: 50%;
+}
+
+.p-projet{
+  width: 60%;
+  text-align: center;
+}
+
+.container-type-projet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.icon-projet{
+  font-size: 30px;
+}
+
+.element-type-projet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}

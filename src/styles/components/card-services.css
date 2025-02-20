@@ -4,7 +4,7 @@
   flex-direction: column;
   gap:30px;
   text-align: center;
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
 }
 
 .cards-service{
@@ -18,8 +18,7 @@
   border-radius: var(--border-Mradius);
   padding-block: 20px;
   padding-inline: 20px;
-  width: 20vw;
-  height: 30vh;
+  width: 20%;
 }
 
 .icon-service{
@@ -41,14 +40,6 @@
 
 @media screen and (max-width: 768px) {
 
-  .services-section{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    text-align: center;
-  }
-
   .cards-service{
     gap:30px;
     display: flex;
@@ -58,12 +49,10 @@
   }
 
   .element-service{
-    background-color: var(--light);
     border-radius: var(--border-Mradius);
     padding-block: 20px;
     padding-inline: 20px;
-    width: 60vw;
-    height: 35vh;
+    width:70%;
   }
 
   .icon-service{

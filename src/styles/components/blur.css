@@ -1,0 +1,162 @@
+.blur-little-blue{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 100px 100px #4e61f54c;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blur-big-blue{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 200px 200px #4e61f54c;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+.blur-big-green{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 200px 200px #d7ff7b43;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+.blur-little-green{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 100px 100px #d7ff7b43;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+.blur-big-violet{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 200px 200px #cc89ff59;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+.blur-little-violet{
+  position: relative;
+  width: 0;
+  height: 0;
+  filter: blur(40px);
+  box-shadow: 0 0 100px 100px #cc89ff59;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+.bigger-blur{
+  box-shadow: 0 0 300px 300px;
+}
+
+.left{
+  left:50px;
+
+}
+
+.right{
+  right:10px;
+}
+
+.right-10{
+  right:-1000px;
+}
+
+.right-5{
+  right:-400px;
+}
+
+.top{
+  top:100px;
+}
+
+.bottom{
+  bottom:100px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .blur-little-blue{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 50px 50px #4e61f54c;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .blur-big-blue{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 100px 100px #4e61f54c;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+  .blur-big-green{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 100px 100px #d7ff7b43;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+  .blur-little-green{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 50px 50px #d7ff7b43;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+  .blur-big-violet{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 100px 100px #cc89ff59;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+  .blur-little-violet{
+    position: relative;
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    box-shadow: 0 0 50px 50px #cc89ff59;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+}

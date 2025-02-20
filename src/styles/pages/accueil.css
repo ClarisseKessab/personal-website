@@ -1,8 +1,6 @@
 /* Accueil */
 /* Partie Hero */
 .hero-section{
-  background-color: var(--light);
-  border-radius: var(--border-Mradius);
   height:80vh;
   display: flex;
   justify-content: center;
@@ -97,8 +95,8 @@
 /* Partie CTA */
 
 .CTA{
+  background-color: var(--dark);
   margin-top: 50px;
- background-color: var(--black);
  color: var(--white);
  display: flex;
  justify-content: space-around;
@@ -115,6 +113,9 @@
   width: 40%;
 }
 
+.CTA a{
+  color: var(--white);
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -167,7 +168,7 @@
 
 .services-section{
   margin-top:30px;
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
   padding-block:40px;
   border-radius: var(--border-Mradius);
 }
@@ -191,8 +192,8 @@
 /* Partie CTA */
 
 .CTA{
+  background-color: var(--dark);
  margin-top: 50px;
- background-color: var(--black);
  color: var(--white);
  display: flex;
  flex-direction: column;

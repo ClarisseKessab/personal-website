@@ -15,11 +15,13 @@
 @import './components/card-services.css';
 @import './components/accordeon.css';
 @import './components/card-project.css';
+@import './components/blur.css';
 
 
 /* Pages */
 @import './pages/accueil.css';
 @import './pages/projets.css';
+@import './pages/projet.css';
 @import './pages/contact.css';
 
 

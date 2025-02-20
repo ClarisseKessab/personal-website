@@ -1,4 +1,8 @@
 import { Metadata } from 'next'
+import { FaRegUser,FaRegHourglass, FaRegFile} from "react-icons/fa";
+
+
+
 import projets from '../../../data/projects.json'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -33,9 +37,29 @@ export default async function Page({ params }: PageProps) {
   }
 
   return (
-    <div>
-      <h1>{projet.title}</h1>
-      <p>{projet.description}</p>
-    </div>
+    <>
+      <div className="projet-title">
+        <h1>{projet.title}</h1>
+        <p className=" p-projet">{projet.description}</p>
+      </div>
+      <div className="container-type-projet">
+          <div className="element-type-projet">
+          <FaRegHourglass className="icon-projet" />
+          <p>Projet réalisé en {projet.duration}</p>
+          </div>
+          <div>
+          <FaRegFile className="icon-projet"/>
+          <p>Projet réalisé en {projet.duration}</p>
+          </div>
+          <div>
+          <FaRegUser className="icon-projet"/>
+          <p></p>
+          </div>
+        </div>
+        <div className="container-img-projet">
+        <img src={projet.image} alt={`Presentation ${projet.title}`} className="image-projet" />
+        </div>
+
+    </>
   )
 }

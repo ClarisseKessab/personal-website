@@ -13,16 +13,19 @@ export default function CardProject({ limit }: CardProjectProps) {
       <div className="cards-project">
         {displayedProjects.map((project) => (
           <>
-            <a href={`/projects/${project.slug}`} className="card-project" key={project.id}>
-              <img src={project.image} alt={`Presentation ${project.title}`} className="image-card-projet" />
-              <div className="card-project-texts">
-                <h3 className="card-projet-title">{project.title}</h3>
-                <div className="card-project-tags">
+            <a href={`/projets/${project.slug}`} className="card-project" key={project.id}>
+            <div className="container-image-card-project">
+            <div className="card-project-tags">
                 {project.tags.map((tag) => (
-                  <div className="card-project-tag" key={project.id}>{tag}</div>
+                  <span className="card-project-tag" key={project.id}>{tag}</span>
                   ))}
-
               </div>
+              <img src={project.image} alt={`Presentation ${project.title}`} className="image-card-projet" />
+            </div>
+              <div className="card-project-texts">
+                <span className="type-card-project">{project.type}</span>
+                <h3 className="card-projet-title">{project.title}</h3>
+                <p>{project.descard}</p>
               </div>
             </a>
           </>

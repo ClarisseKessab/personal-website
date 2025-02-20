@@ -41,6 +41,7 @@ const Accordeon: React.FC = () => {
   };
 
   return (
+    <>
     <div className="accordeon">
         <img src={selectedSection?.imageUrl} alt={selectedSection?.title} className="img-accordeon"/>
       <div className="content-accordeon">
@@ -69,6 +70,7 @@ const Accordeon: React.FC = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

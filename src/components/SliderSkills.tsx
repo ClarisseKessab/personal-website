@@ -18,6 +18,7 @@ const SliderSkills: React.FC = () => {
   const duplicatedSkills = [...skills, ...skills];
 
   return (
+    <>
     <div className="skills-slider">
       <div className="skill-slider">
         {duplicatedSkills.map((skill, index) => (
@@ -34,6 +35,7 @@ const SliderSkills: React.FC = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
