@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import { FaRegUser,FaRegHourglass, FaRegFile} from "react-icons/fa";
 
 
 
@@ -46,7 +45,6 @@ export default async function Page({ params }: PageProps) {
           <a className="btn btn-projet-secondary"> Des questions ?</a>
         </div>
       </div>
-      <div className="blur-little-blue right-10"></div>
       <div className="blur-big-green left-10 top"></div>
         <div className="container-img-projet">
         <img src={projet.image} alt={`Presentation ${projet.title}`} className="image-projet" />
