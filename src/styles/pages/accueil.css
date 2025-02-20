@@ -126,7 +126,7 @@
 
   /* Partie Hero */
   .hero-section{
-    height:70vh;
+    height:90vh;
   }
 
   .text-work-hero{
@@ -146,10 +146,7 @@
   }
 
   .icon-design-fire{
-    position: relative;
-    font-size:30px;
-    right: 100px;
-    top:100px;
+   opacity: 0;
   }
 
 

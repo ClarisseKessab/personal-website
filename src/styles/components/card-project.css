@@ -75,4 +75,11 @@
     width: 100%;
   }
 
+  .card-project:hover{
+    filter: brightness(50%);
+    padding-block:10px;
+    width: 100%;
+    z-index:1;
+  }
+
 }
