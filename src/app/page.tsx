@@ -12,7 +12,7 @@ export default function Home(){
     <div className="texts-hero">
       <div className="icon-design-fire">💥</div>
       <div className="text-name-hero">Moi, c&apos;est Clarisse 👋</div>
-      <h1 className="text-work-hero"><span className="green-high-text">Développeuse</span> Front-End basée à <span className="violet-text">Nantes</span></h1>
+      <h1 className="text-work-hero"><span className="green-high-text">Développeuse</span> Full-stack basée à <span className="violet-text">Nantes</span></h1>
       <div className="texts-competences-hero">
         <h2 className="h2">Développement</h2>
         <p>✶</p>
