@@ -14,11 +14,11 @@ export default function Home(){
       <div className="text-name-hero">Moi, c&apos;est Clarisse 👋</div>
       <h1 className="text-work-hero"><span className="green-high-text">Développeuse</span> Front-End basée à <span className="violet-text">Nantes</span></h1>
       <div className="texts-competences-hero">
-        <h2>Développement</h2>
+        <h2 className="h2">Développement</h2>
         <p>✶</p>
-        <h2>UI Design</h2>
+        <h2 className="h2">UI Design</h2>
         <p>✶</p>
-        <h2>SEO</h2>
+        <h2 className="h2">SEO</h2>
         </div>
         <div className="blur-big-green right bottom"></div>
     </div>
@@ -29,7 +29,7 @@ export default function Home(){
     <div className="blur-little-violet top left"></div>
     </div>
     <div className="skills-section">
-      <h2 className="h2-title">Compétences techniques pour des projets innovants et <span className="green-high-text">performants</span></h2>
+      <h2 className="h2">Compétences techniques pour des projets innovants et <span className="green-high-text">performants</span></h2>
       <div className="skills">
         <SliderSkills/>
       </div>
@@ -40,13 +40,13 @@ export default function Home(){
         <Accordeon/>
       </div>
       <div className="services-section">
-        <h2 className="h2-title h2-service text-white">Une approche technique pour des <span className="green-high-text">projets web</span> créatifs</h2>
+        <h2 className="h2 h2-service text-white">Une approche technique pour des <span className="green-high-text">projets web</span> créatifs</h2>
         <CardService/>
     <div className="blur-big-green top right-10"></div>
 
       </div>
       <div className="projets-section">
-      <h2 className="h2-title h2-service">D&apos;une idée à la réalité : Mes <span className="dark-blue-text">réalisations</span> digitales</h2>
+      <h2 className="h2 h2-service">D&apos;une idée à la réalité : Mes <span className="dark-blue-text">réalisations</span> digitales</h2>
       <CardProject limit={4} />
 
       </div>

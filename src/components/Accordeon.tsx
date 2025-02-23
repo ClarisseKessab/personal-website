@@ -52,7 +52,7 @@ const Accordeon: React.FC = () => {
               className={`accordeon-texts section-title ${selectedSection?.title === section.title ? 'active' : ''}`}
               onClick={() => handleSectionClick(section)}
             >
-              <h3 className="h3-title">{section.title}</h3>
+              <h3 className="h3">{section.title}</h3>
               <span className="icon-accordeon">
                 {selectedSection?.title === section.title ? '−' : '+'}
               </span>

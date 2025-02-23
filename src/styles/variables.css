@@ -13,7 +13,7 @@
   --font-family-heading:'Oswald', sans-serif;
   --font-family: 'Noto Sans', sans-serif;
   --heading1-font-size: 48px;
-  --heading2-font-size: 32px;
+  --heading2-font-size: 30px;
   --heading3-font-size: 24px;
   --heading4-font-size: 20px;
   --body-font-size: 16px;
@@ -30,7 +30,12 @@
   --border-Mradius: 20px;
 }
 
-.h2-title{
+.h2{
+  font-size:var(--heading2-font-size);
+  font-family: 'Oswald', sans-serif;
+}
+
+.h3{
   font-size:var(--heading3-font-size);
   font-family: 'Oswald', sans-serif;
 }

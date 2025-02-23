@@ -1,8 +1,14 @@
-.projets-title{
-  padding-block: 60px;
+.projets-texte{
+  padding-block: 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  justify-content: center;
+  gap:10px;
   margin-bottom: 40px;
+}
+
+.projets-texte p{
+  width: 50%;
+  text-align: center;
 }

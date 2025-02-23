@@ -11,7 +11,7 @@ export default function CardService(){
     {services.map((service, index) => (
           <div className="element-service" key={index} style={{ backgroundColor: `var(--white)` }}>
             <p className="icon-service">{service.src}</p>
-            <h3 className="title-service">{service.title}</h3>
+            <h3 className="h3 title-service">{service.title}</h3>
             <p className="desc-service">{service.desc}</p>
           </div>
         ))}

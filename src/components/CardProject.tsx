@@ -24,7 +24,7 @@ export default function CardProject({ limit }: CardProjectProps) {
             </div>
               <div className="card-project-texts">
                 <span className="type-card-project">{project.type}</span>
-                <h3 className="card-projet-title">{project.title}</h3>
+                <h3 className="h3 card-projet-title">{project.title}</h3>
                 <p>{project.descard}</p>
               </div>
             </a>
