@@ -68,11 +68,19 @@
 
 @media screen and (max-width: 768px) {
 
-  .card-project-tag {
-    display: none;
+  .card-project {
+    padding-block:10px;
+    padding-bottom: 20px;
+    width: 100%;
   }
 
-  .card-project {
+  .card-project:hover {
+    padding-block:10px;
+    padding-bottom: 20px;
     width: 100%;
+  }
+
+  .card-project-tag {
+    display: none;
   }
 }

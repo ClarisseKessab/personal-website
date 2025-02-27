@@ -57,7 +57,7 @@ export default async function Page({ params }: PageProps) {
       <div className="types-projet">
         <div className="type-projet">
           <GrGroup className="icon-projet"/>
-          <p className="title-type-projet">Par <br/> {projet.team.length} personnes</p>
+          <p className="title-type-projet">Par <br/>{projet.team?.length ?? 0} personnes</p>
         </div>
         <div className="type-projet">
           <GrDocumentTime className="icon-projet"/>
