@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 const skills = [
-  { src: "/skills/semrush.png", alt: "Semrush" },
-  { src: "/skills/adobecreative.png", alt: "Adobe Creative" },
+  { src: "/skills/Semrush.png", alt: "SemRush" },
+  { src: "/skills/Adobe Creative.png", alt: "Adobe Creative" },
   { src: "/skills/Java.png", alt: "Java" },
-  { src: "/skills/Html5.png", alt: "HTML" },
-  { src: "/skills/Css3.png", alt: "CSS" },
+  { src: "/skills/HTML.png", alt: "HTML" },
+  { src: "/skills/CSS.png", alt: "CSS" },
   { src: "/skills/Javascript.png", alt: "Javascript" },
   { src: "/skills/React.png", alt: "React" },
   { src: "/skills/TypeScript.png", alt: "Typescript" },
-  { src: "/skills/RubyOnRails.png", alt: "Ruby On Rails" },
+  { src: "/skills/Ruby On Rails.png", alt: "Ruby On Rails" },
   { src: "/skills/Webflow.png", alt: "Webflow" },
-  { src: "/skills/figma.png", alt: "Figma" },
+  { src: "/skills/Figma.png", alt: "Figma" },
 ];
 
 const SliderSkills: React.FC = () => {

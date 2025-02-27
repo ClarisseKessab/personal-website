@@ -158,7 +158,7 @@
   /* Partie Skills */
 
   .skills-section{
-    margin-top: var(--spacing-XL);
+    margin-top: var(--spacing-L);
     display: flex;
     flex-direction: column;
     justify-content: center;
