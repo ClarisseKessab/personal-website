@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Taste Explorers",
-    "meta-title": "Taste Explorers - Création d'application mobile en Ruby On Rails",
     "slug": "taste-explorers",
+    "meta-title": "Taste Explorers - Création d'application mobile en Ruby On Rails",
+    "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
+    "title": "Taste Explorers",
     "description": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier. L'application permet aux hôtes de partager leurs traditions culinaires et aux explorateurs culinaires de découvrir de nouvelles saveurs lors de repas thématiques.",
     "descard": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier.",
     "duration":"2 semaines",
     "team":["Clarisse", "Mathieu.L", "Guillaume.A", "Kevin.I"],
-    "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
     "image": "/taste-explorers/TasteExplorers.png",
     "images": [
       "/taste-explorers/1.png",
@@ -20,7 +20,9 @@
       "/taste-explorers/7.png",
       "/taste-explorers/8.png"
     ],
+    "brief":"Projet final réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de créer une application web complète en 5 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Développement",
+    "projet":"Wagon",
     "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku","OpenAI"],
     "context": "Projet personnel pour présenter mes compétences.",
     "features": [
@@ -28,8 +30,7 @@
       "Système de réservation pour les convives",
       "Quiz interactifs générés par IA pour animer les repas"
     ],
-    "github": "https://github.com/mathieulecuelle/taste-explorers",
-    "demo": "",
+    "demo": "https://github.com/mathieulecuelle/taste-explorers",
     "tags":["Développement","Front-End","Application web" ]
   },
   {
@@ -55,8 +56,7 @@
       "Système de réservation",
       "Interface propriétaire pour gérer ses îles"
     ],
-    "github": "https://github.com/ClarisseKessab/Skybnb",
-    "demo": "",
+    "demo": "https://github.com/ClarisseKessab/Skybnb",
     "tags":["Front-End", "Développement", "Site web"]
   },
   {
@@ -82,7 +82,6 @@
       "Utilisation de Next.js et TypeScript"
     ],
     "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/moi/portfolio",
     "demo": "https://monportfolio.com",
     "tags":["Front-End", "UX/UI", "Développement"]
   },
@@ -109,8 +108,7 @@
       "Utilisation de Next.js et TypeScript"
     ],
     "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/moi/portfolio",
-    "demo": "https://monportfolio.com",
+    "demo": "https://www.canva.com/design/DAFj7r3LRGI/QlyNcPg5AjnKb1TcYG_Ziw/view?utm_content=DAFj7r3LRGI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0923302645",
     "tags":["UX/UI", "Front-End", "Développement"]
   },
   {

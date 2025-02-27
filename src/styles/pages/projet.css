@@ -1,5 +1,6 @@
 .projet-title{
-  padding-block: 60px;
+  padding-bottom: 40px;
+  padding-top: 60px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,8 +39,29 @@
 
 }
 
+.type-projet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
 .icon-projet{
-  font-size: 30px;
+  font-size:26px;
+}
+
+.types-projet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:250px;
+  margin-bottom: 40px;
+}
+
+.title-type-projet{
+  font-size: 16px;
+  text-align: center;
 }
 
 .element-type-projet{
@@ -56,6 +78,44 @@
   align-items: center;
   gap:20px;
 }
+
+.texts-projet{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.brief-projet{
+  background-color: var(--violet);
+  border-radius: 20px;
+  padding-inline: 30px;
+  padding-block: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+
+.feature-projet{
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding-inline: 30px;
+  padding-block: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.texts-projet h2{
+  margin-bottom: 10px;
+
+}
+
+
+
+
+
 
 .propos-page-projet{
   display: flex;
@@ -83,8 +143,7 @@
 }
 
 .photos-section{
-  background-color: var(--dark-blue);
-  color: var(--white);
+  color: var(--dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,11 +164,13 @@
 
 .photo-projet{
   width:20%;
+
 }
 
 .img-projet{
   border-radius: 20px;
   width:100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .btns-projet{
@@ -157,5 +218,18 @@
    .img-projet{
     border-radius: 5px;
     width:100%;
+  }
+
+  .title-type-projet{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .types-projet{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    gap:0px;
   }
 }

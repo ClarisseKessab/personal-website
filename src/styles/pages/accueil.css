@@ -150,10 +150,15 @@
   }
 
 
+.texts-competences-hero h2{
+  font-size: 16px;
+}
+
+
   /* Partie Skills */
 
   .skills-section{
-    margin-top: var(--spacing-M);
+    margin-top: var(--spacing-XL);
     display: flex;
     flex-direction: column;
     justify-content: center;
