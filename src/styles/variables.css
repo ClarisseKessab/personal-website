@@ -6,7 +6,7 @@
   --green:#D8FF7B;
   --blue:rgb(216, 234, 254);
   --dark-blue:#4E61F5;
-  --violet:#e4caf7;
+  --violet:#CB89FF;
   --black:#1B1B1B;
 
   /* Fonts */
@@ -71,7 +71,7 @@
     --border-Sradius: 6px !important;
     --border-Mradius: 12px !important;
   }
-  .h2{
+  .h2-title{
     font-family: 'Oswald', sans-serif;
     font-size:20px;
   text-align: center;
