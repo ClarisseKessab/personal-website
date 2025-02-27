@@ -44,6 +44,7 @@ export default async function Page({ params }: PageProps) {
     return "Visiter le site";
   };
 
+
   return (
     <>
       <div className="projet-title">
@@ -57,7 +58,15 @@ export default async function Page({ params }: PageProps) {
       <div className="types-projet">
         <div className="type-projet">
           <GrGroup className="icon-projet"/>
-          <p className="title-type-projet">Par <br/>{projet.team?.length ?? 0} personnes</p>
+          <p className="title-type-projet"> {projet.team?.length && projet.team.length > 1 ? (
+          <>
+            Par <br />
+            {projet.team.length} personnes
+          </>
+        ) : (
+          "Seul"
+        )}
+        </p>
         </div>
         <div className="type-projet">
           <GrDocumentTime className="icon-projet"/>
