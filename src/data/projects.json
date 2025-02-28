@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 5,
     "slug": "taste-explorers",
     "meta-title": "Taste Explorers - Création d'application mobile en Ruby On Rails",
     "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
@@ -20,122 +20,81 @@
       "/taste-explorers/7.png",
       "/taste-explorers/8.png"
     ],
-    "brief":"Projet final réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de créer une application web complète en 5 jours, en utilisant toutes les compétences acquises durant la formation.",
+    "brief":"Projet final réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de créer une application web complète en 10 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Développement",
     "projet":"Wagon",
     "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku","OpenAI"],
-    "context": "Projet personnel pour présenter mes compétences.",
     "features": [
-      "Organisation de repas thématiques autour des cuisines du monde",
-      "Système de réservation pour les convives",
-      "Quiz interactifs générés par IA pour animer les repas"
+      " 🍽️ Organisation de repas thématiques autour des cuisines du monde",
+      " 📅 Système de réservation pour les convives",
+      " 🎮 Quiz interactifs générés par IA pour animer les repas"
     ],
     "demo": "https://github.com/mathieulecuelle/taste-explorers",
-    "tags":["Développement","Front-End","Application web" ]
+    "tags":["Développement","Fullstack","Application Mobile" ]
   },
   {
-    "id": 2,
-    "title": "SkyBnb",
-    "meta-title": "SkyBnb - Création de site web en Ruby On Rails",
+    "id": 4,
     "slug": "skybnb",
-    "description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements classiques, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
-    "descard": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
-    "meta-description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
+    "meta-title": "SkyBnb - Clone d'Airbnb",
+    "meta-description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes !",
+    "title": "Skybnb",
+    "description": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon. Notre twist unique ? Au lieu de proposer des locations d'appartements classiques, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
+    "descard": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon.",
+    "duration":"1 semaine",
+    "team":["Clarisse", "Mathieu.L", "Guillaume.A", "Kevin.I"],
     "image": "/Skybnb/Skybnb.png",
     "images": [
-      "/images/portfolio_1.png",
-      "/images/portfolio_2.png",
-      "/images/portfolio_3.png"
+      "/taste-explorers/1.png",
+      "/taste-explorers/2.png",
+      "/taste-explorers/3.png",
+      "/taste-explorers/4.png",
+      "/taste-explorers/5.png",
+      "/taste-explorers/6.png",
+      "/taste-explorers/7.png",
+      "/taste-explorers/8.png"
     ],
+    "brief":"Projet réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de recréer totalement Airbnb en 5 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Développement",
-    "stack":["Ruby On Rails", "Javascript", "Github", "HTML/SCSS","Bootstrap", "PostgreSQL","Hébergement sur Heroku","Cloudinary (gestion des images)","Mapbox (cartes interactives)"],
-    "context": "Projet personnel pour présenter mes compétences.",
+    "projet":"Wagon",
+    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku"],
     "features": [
-      "Authentification utilisateur (connexion/inscription)",
-      "Recherche d'îles flottantes par localisation",
-      "Système de réservation",
-      "Interface propriétaire pour gérer ses îles"
+      " 🍽️ Authentification utilisateur (connexion/inscription)",
+      " 📅 Recherche d'îles flottantes par localisation",
+      " 🎮 Système de réservation",
+      " 👨 Interface propriétaire pour gérer ses îles"
     ],
     "demo": "https://github.com/ClarisseKessab/Skybnb",
-    "tags":["Front-End", "Développement", "Site web"]
+    "tags":["Développement","Fullstack","Application web" ]
   },
   {
     "id": 3,
-    "title": "O'Travel",
-    "meta-title": "Mon portfolio personnel en Next.js.",
     "slug": "otravel",
-    "description": "Mon portfolio personnel en Next.js.",
-    "descard": "",
-    "meta-description": "Mon portfolio personnel en Next.js.",
+    "meta-title": "O'Travel - Planificateur de voyage",
+    "meta-description": "O'Travel est une application web permettant d'organiser ces voyages automatiquement. O'Travel prend en compte votre budget, les activités voulues et votre type de voyage. ",
+    "title": "O'Travel",
+    "description": "Fini le casse-tête de l’organisation de voyage ! O'Travel est l’application qui transforme vos envies d’évasion en itinéraire parfait, adapté à votre budget, votre style de voyage et vos préférences d’activités. Que vous soyez aventurier, épicurien ou globe-trotteur curieux, notre algorithme intelligent vous propose des destinations et des expériences personnalisées en fonction de votre temps disponible et de vos envies du moment.",
+    "descard": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon.",
+    "duration":"3 mois",
+    "team":[],
     "image": "/OTravel/oTravel.png",
     "images": [
-      "/images/portfolio_1.png",
-      "/images/portfolio_2.png",
-      "/images/portfolio_3.png"
+      "/OTravel/Accueil.png",
+      "/OTravel/Article.png",
+      "/OTravel/Blog.png",
+      "/OTravel/Form.png"
     ],
-    "type":"UI Design",
-    "stack":[],
-    "context": "Projet personnel pour présenter mes compétences.",
+    "brief":"Projet réalisé dans le cadre de mon projet de fin d’études en UI/UX Design. Le défi était de concevoir une application de A à Z, en appliquant toutes les compétences acquises : recherche utilisateur, wireframing, prototypage et design d’interface.",
+    "type":"Design UI",
+    "projet":"ECV",
+    "stack":["Figma", "AdobeCreative", "Wordpress", "Webflow"],
     "features": [
-      "Présentation de mes projets",
-      "Design responsive",
-      "Utilisation de Next.js et TypeScript"
+      " ✅ Suggestions 100% personnalisées",
+      " ✅ Optimisation du budget et du temps",
+      " ✅ Sélection d’activités selon vos envies",
+      " ✅ Une interface ergonomique et immersive"
     ],
-    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "demo": "https://monportfolio.com",
-    "tags":["Front-End", "UX/UI", "Développement"]
-  },
-  {
-    "id": 4,
-    "title": "Copkers",
-    "meta-title": "Mon portfolio personnel en Next.js.",
-    "slug": "otravel",
-    "description": "Mon portfolio personnel en Next.js.",
-    "descard": "",
-    "meta-description": "Mon portfolio personnel en Next.js.",
-    "image": "/Copkers/Copkers.png",
-    "images": [
-      "/images/portfolio_1.png",
-      "/images/portfolio_2.png",
-      "/images/portfolio_3.png"
-    ],
-    "type":"UI Design",
-    "stack":[],
-    "context": "Projet personnel pour présenter mes compétences.",
-    "features": [
-      "Présentation de mes projets",
-      "Design responsive",
-      "Utilisation de Next.js et TypeScript"
-    ],
-    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "demo": "https://www.canva.com/design/DAFj7r3LRGI/QlyNcPg5AjnKb1TcYG_Ziw/view?utm_content=DAFj7r3LRGI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0923302645",
-    "tags":["UX/UI", "Front-End", "Développement"]
-  },
-  {
-    "id": 4,
-    "title": "Miam",
-    "meta-title": "Mon portfolio personnel en Next.js.",
-    "slug": "otravel",
-    "description": "Mon portfolio personnel en Next.js.",
-    "meta-description": "Mon portfolio personnel en Next.js.",
-    "image": "/images/portfolio.png",
-    "images": [
-      "/images/portfolio_1.png",
-      "/images/portfolio_2.png",
-      "/images/portfolio_3.png"
-    ],
-    "type":"UI Design",
-    "stack":[],
-    "context": "Projet personnel pour présenter mes compétences.",
-    "features": [
-      "Présentation de mes projets",
-      "Design responsive",
-      "Utilisation de Next.js et TypeScript"
-    ],
-    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "https://github.com/moi/portfolio",
-    "demo": "https://monportfolio.com",
-    "tags":["Front-End", "UX/UI", "Site"]
+    "demo": "https://www.figma.com/proto/DuCJafEEU2hbjJ4Aiie0XR/O'Travel?node-id=70-2&t=OVwYSVZlUaaMC9RU-1",
+    "tags":["Design UI","Front-End","Application web" ]
   }
 
 ]

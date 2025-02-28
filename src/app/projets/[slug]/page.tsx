@@ -40,7 +40,7 @@ export default async function Page({ params }: PageProps) {
     if (url.startsWith("https://github.com/")) return "Voir le GitHub";
     if (url.startsWith("https://canva.com")) return "Voir la présentation";
     if (url.startsWith("https://notion.so/")) return "Voir le Notion";
-    if (url.startsWith("https://figma.com/")) return "Voir le Figma";
+    if (url.startsWith("https://www.figma.com")) return "Voir le Figma";
     return "Visiter le site";
   };
 
@@ -51,8 +51,8 @@ export default async function Page({ params }: PageProps) {
         <h1>{projet.title}</h1>
         <p>{projet.description}</p>
         <div className="btns-projet">
-          <a href={`${projet.github}`}className="btn btn-projet"> {getButtonText(projetUrl)}</a>
-          <a className="btn btn-projet-secondary"> Des questions ?</a>
+          <a href={`${projet.demo}`}className="btn btn-projet" target="_blank"> {getButtonText(projetUrl)}</a>
+          <a className="btn btn-projet-secondary" href="/contact"> Des questions ?</a>
         </div>
       </div>
       <div className="types-projet">
@@ -64,7 +64,7 @@ export default async function Page({ params }: PageProps) {
             {projet.team.length} personnes
           </>
         ) : (
-          "Seul"
+          "Seule"
         )}
         </p>
         </div>
