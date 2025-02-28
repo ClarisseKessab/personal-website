@@ -48,8 +48,8 @@ display: inline-block;
 }
 
 .btn-cta{
-  background-color: var(--violet);
-  color: var(--dark);
+  background-color: var(--dark-blue);
+  color: var(--white);
   padding-inline: 10px;
   font-weight: 600;
   padding-block: 20px;

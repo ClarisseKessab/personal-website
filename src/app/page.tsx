@@ -40,7 +40,7 @@ export default function Home(){
         <Accordeon/>
       </div>
       <div className="services-section">
-        <h2 className="h2 h2-service text-white">Une approche technique pour des <span className="green-high-text">projets web</span> créatifs</h2>
+        <h2 className="h2 h2-service">Une approche technique pour des <span className="green-high-text">projets web</span> créatifs</h2>
         <CardService/>
     <div className="blur-big-green top right-10"></div>
 

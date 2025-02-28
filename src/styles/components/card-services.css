@@ -4,7 +4,7 @@
   flex-direction: column;
   gap:30px;
   text-align: center;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
 .cards-service{
