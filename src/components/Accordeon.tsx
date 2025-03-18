@@ -13,25 +13,23 @@ interface Section {
 const sections: Section[] = [
   {
     "title": "Qui suis-je ?",
-    "content": "<p>💡 Développeuse Fullstack & UI Designer | 🎨💻 22 ans</p><p>🎓 Double BAC +3 en Conception UI & Développement</p><p>🚀 Passionnée par le design et le code, j’aime créer des expériences fluides et performantes.</p><p>🌟 On dit de moi :</p><ul><li>✔️ Créative & Rigoureuse – J’allie esthétique et performance</li><li>✔️ Énergique & Curieuse – Toujours en quête d’apprentissage</li><li>✔️ Positive & Engagée – Dynamisme et motivation au rendez-vous !</li></ul>",
+    "content": "💡 Passionnée par le design et le développement web, j’allie créativité et technique pour donner vie à des expériences uniques.\n\n🎨💻 Développeuse Fullstack & UI Designer, je conçois des interfaces modernes, performantes et engageantes.\n\n🚀 Toujours en quête d’apprentissage, j’aime relever de nouveaux défis et explorer les dernières innovations du web.\n\n🌟 On dit de moi :\n✔️ Créative & Rigoureuse – J’allie esthétique et performance\n✔️ Curieuse & Ambitieuse – Toujours prête à apprendre et progresser\n✔️ Dynamique & Passionnée – Impossible de s’ennuyer avec moi !",
     "imageUrl": "assets/accordeon/developpeur.png",
     "button": "En savoir plus"
   },
   {
     "title": "Expériences",
-    "content": "<p>🎯 Expérience en développement et gestion de projets digitaux.</p><p>🚀 <strong>Développement Web :</strong></p><ul><li>Création de 2 applications en Ruby on Rails & JavaScript</li></ul><p>💼 <strong>Gestion de projet :</strong></p><ul><li>2 ans et demi en alternance</li><li>SEO & optimisation des performances (WordPress, Shopify...)</li><li>Création et refonte de sites</li><li>Gestion client & suivi de projet</li></ul><p>💻 <strong>Freelance :</strong></p><ul><li>Adaptabilité aux besoins spécifiques</li><li>Respect des délais et attentes clients</li></ul>",
+    "content": "🎯 De la gestion de projet au développement, j’ai exploré plusieurs facettes du digital.\n\n🚀 Développement Web :\n- Création de 2 applications en Ruby on Rails & JavaScript\n- Optimisation de sites WordPress & Shopify\n\n💼 Gestion de projet :\n- 2 ans et demi en alternance\n- SEO & amélioration des performances\n- Création et refonte de sites\n- Accompagnement et relation client\n\n💻 Freelance :\n- Projets variés, adaptation et gestion des deadlines\n- Solutions sur-mesure selon les besoins clients",
     "imageUrl": "assets/accordeon/experience.png",
     "button": "Une nouvelle aventure ?"
   },
   {
     "title": "Études",
-    "content": "<p>📚 Un parcours mêlant développement web et design UI.</p><p>💻 <strong>Campus Academy</strong> – Bases du développement</p><p>🎨 <strong>Webstart & MJM Graphics Design</strong> – Infographie & Webdesign</p><p>🖥️ <strong>ECV Digital</strong> – Spécialisation UI/UX</p><p>🚀 <strong>Le Wagon</strong> – Développement Fullstack (Bac+3)</p><p>Une expertise qui allie créativité et technique !</p>",
+    "content": "📚 Un parcours hybride mêlant design, UI/UX et développement web.\n\n💻 Campus Academy – Premières bases en développement\n🎨 Webstart & MJM Graphics Design – Infographie & Webdesign\n🖥️ ECV Digital – Spécialisation UI/UX\n🚀 Le Wagon – Développement Fullstack (Bac+3)\n\nUn mix parfait entre créativité et technique !",
     "imageUrl": "assets/accordeon/etudes.png",
     "button": "Des questions ?"
   }
 ]
-
-
 
 ;
 
