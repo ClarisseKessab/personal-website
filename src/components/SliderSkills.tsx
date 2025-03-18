@@ -3,7 +3,7 @@ const skills = [
   { src: "/skills/Semrush.png", alt: "SemRush" },
   { src: "/skills/Adobe Creative.png", alt: "Adobe Creative" },
   { src: "/skills/Java.png", alt: "Java" },
-  { src: "/skills/HTML.png", alt: "HTML" },
+  { src: "/skills/Html.png", alt: "HTML" },
   { src: "/skills/CSS.png", alt: "CSS" },
   { src: "/skills/Javascript.png", alt: "Javascript" },
   { src: "/skills/React.png", alt: "React" },
