@@ -10,7 +10,7 @@ const skills = [
   { src: "/skills/TypeScript.png", alt: "Typescript" },
   { src: "/skills/Ruby On Rails.png", alt: "Ruby On Rails" },
   { src: "/skills/Webflow.png", alt: "Webflow" },
-  { src: "/skills/Figma.png", alt: "Figma" },
+  { src: "/skills/figma.png", alt: "Figma" },
 ];
 
 const SliderSkills: React.FC = () => {
