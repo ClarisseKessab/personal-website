@@ -31,6 +31,7 @@ const sections: Section[] = [
   }
 ]
 
+
 ;
 
 const Accordeon: React.FC = () => {
