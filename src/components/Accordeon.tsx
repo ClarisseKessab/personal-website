@@ -12,24 +12,25 @@ interface Section {
 
 const sections: Section[] = [
   {
-    title: "Qui suis-je ?",
-    content: "💡 <b>Développeuse Fullstack & UI Designer</b> | 🎨💻 22 ans<br><br>🎓 <b>Double BAC +3</b> en Conception UI & Développement<br><br>🚀 Passionnée par le design et le code, j’aime créer des expériences fluides et performantes.<br><br>🌟 <b>On dit de moi :</b><br>✔️ <b>Créative & Rigoureuse</b> – J’allie esthétique et performance<br>✔️ <b>Énergique & Curieuse</b> – Toujours en quête d’apprentissage<br>✔️ <b>Positive & Engagée</b> – Dynamisme et motivation au rendez-vous !",
-    imageUrl: "assets/accordeon/developpeur.png",
-    button: "En savoir plus"
+    "title": "Qui suis-je ?",
+    "content": "<p>💡 Développeuse Fullstack & UI Designer | 🎨💻 22 ans</p><p>🎓 Double BAC +3 en Conception UI & Développement</p><p>🚀 Passionnée par le design et le code, j’aime créer des expériences fluides et performantes.</p><p>🌟 On dit de moi :</p><ul><li>✔️ Créative & Rigoureuse – J’allie esthétique et performance</li><li>✔️ Énergique & Curieuse – Toujours en quête d’apprentissage</li><li>✔️ Positive & Engagée – Dynamisme et motivation au rendez-vous !</li></ul>",
+    "imageUrl": "assets/accordeon/developpeur.png",
+    "button": "En savoir plus"
   },
   {
-    title: "Expériences",
-    content: "🎯 <b>Expérience en développement et gestion de projets digitaux.</b><br><br>🚀 <b>Développement Web :</b><br>- Création de 2 applications en Ruby on Rails & JavaScript<br><br>💼 <b>Gestion de projet :</b><br>- 2 ans et demi en alternance<br>- SEO & optimisation des performances (WordPress, Shopify...)<br>- Création et refonte de sites<br>- Gestion client & suivi de projet<br><br>💻 <b>Freelance :</b><br>- Adaptabilité aux besoins spécifiques<br>- Respect des délais et attentes clients",
-    imageUrl: "assets/accordeon/experience.png",
-    button: "Une nouvelle aventure ?"
+    "title": "Expériences",
+    "content": "<p>🎯 Expérience en développement et gestion de projets digitaux.</p><p>🚀 <strong>Développement Web :</strong></p><ul><li>Création de 2 applications en Ruby on Rails & JavaScript</li></ul><p>💼 <strong>Gestion de projet :</strong></p><ul><li>2 ans et demi en alternance</li><li>SEO & optimisation des performances (WordPress, Shopify...)</li><li>Création et refonte de sites</li><li>Gestion client & suivi de projet</li></ul><p>💻 <strong>Freelance :</strong></p><ul><li>Adaptabilité aux besoins spécifiques</li><li>Respect des délais et attentes clients</li></ul>",
+    "imageUrl": "assets/accordeon/experience.png",
+    "button": "Une nouvelle aventure ?"
   },
   {
-    title: "Études",
-    content: "📚 <b>Un parcours mêlant développement web et design UI.</b><br><br>💻 <b>Campus Academy</b> – Bases du développement<br>🎨 <b>Webstart & MJM Graphics Design</b> – Infographie & Webdesign<br>🖥️ <b>ECV Digital</b> – Spécialisation UI/UX<br>🚀 <b>Le Wagon</b> – Développement Fullstack (Bac+3)<br><br>Une expertise qui allie <b>créativité et technique</b> !",
-    imageUrl: "assets/accordeon/etudes.png",
-    button: "Des questions ?"
+    "title": "Études",
+    "content": "<p>📚 Un parcours mêlant développement web et design UI.</p><p>💻 <strong>Campus Academy</strong> – Bases du développement</p><p>🎨 <strong>Webstart & MJM Graphics Design</strong> – Infographie & Webdesign</p><p>🖥️ <strong>ECV Digital</strong> – Spécialisation UI/UX</p><p>🚀 <strong>Le Wagon</strong> – Développement Fullstack (Bac+3)</p><p>Une expertise qui allie créativité et technique !</p>",
+    "imageUrl": "assets/accordeon/etudes.png",
+    "button": "Des questions ?"
   }
 ]
+
 
 
 ;
