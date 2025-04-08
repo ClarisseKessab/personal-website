@@ -63,7 +63,6 @@ export default function Home() {
         </div>
         <div className="cards-service">
           <CardService iconLight="/icon-services/light/ui.png" iconDark="/icon-services/dark/ui.png" alt="UI Design" title="Design d’interface (UI)" description="🎨 Pour un site qui donne envie au premier coup d’œil. Un design clair, moderne et responsive qui valorise votre contenu et facilite la navigation." isDark={isDark}/>
-          <div className="blur blur-medium blur-green" style={{ top: '300', left: '100px' }} />
           <CardService iconLight="/icon-services/light/dev.png" iconDark="/icon-services/dark/dev.png" alt="Développement" title="Création de site vitrine" description="🧱 Pour une présence en ligne professionnelle et bien structurée. Site réalisé sur Webflow ou WordPress, optimisé, responsive et facile à gérer." isDark={isDark}/>
           <div className="blur blur-big blur-blue" style={{ bottom: '10', right: '200px' }} />
 
@@ -103,8 +102,8 @@ export default function Home() {
       <div className="blur blur-big blur-violet" style={{ top: '100', left: '0' }} />
       <div className="blur blur-medium blur-green" style={{ top: '500px', left: '0' }} />
       <div className="blur blur-medium blur-blue" style={{ top: '3500px', left: '100px' }} />
-      <div className="blur blur-medium blur-blue" style={{ top: '3700px', left: '400px' }} />
-      <div className="blur blur-medium blur-green" style={{ top: '3500px', left: '1000px' }} />
+      <div className="blur blur-medium blur-blue" style={{ top: '3700px', left: '100px' }} />
+      <div className="blur blur-medium blur-green" style={{ top: '3500px', left: '100px' }} />
       <div className="blur blur-small blur-violet" style={{ top: '200px', right: '100px' }} />
       <div className="blur blur-big blur-blue" style={{ top: '900px', left: '0' }} />
 
