@@ -21,10 +21,10 @@ export default function CardReview({ clientName, review, rating = 5, emoji }: Ca
           </div>
           <p className="review-text">{review}</p>
         </div>
-        <h4 className="client-name">
+        <p className="client-name">
           {emoji && <span>{emoji} </span>}
           {clientName}
-        </h4>
+        </p>
       </div>
     </div>
   );

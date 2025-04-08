@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="work-hero">
               <h1><span className="highlight-green">Développeuse</span> web 💥 basée sur <span className="text-violet">Nantes</span></h1>
-              <h3>UI Design ✶ Développement ✶ SEO</h3>
+              <p className="h3">UI Design ✶ Développement ✶ SEO</p>
             </div>
           </div>
           <a className="btn-primary">Prenons un café ensemble</a>
