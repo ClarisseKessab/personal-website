@@ -1,0 +1,144 @@
+.mentions-legales {
+  padding: 80px 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.mentions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mentions-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+  font-family: var(--font-heading);
+}
+
+.mentions-container h2 {
+  font-size: 1.6rem;
+  margin-top: 32px;
+  font-weight: 600;
+  font-family: var(--font-heading2);
+}
+
+.mentions-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mentions-container a {
+  color: var(--color-text);
+  text-decoration: underline;
+  font-size: 16px;
+
+}
+
+/* =================== Politique de Confidentialité & Mentions =================== */
+
+.privacy-policy,
+.mentions-legales {
+  padding: 100px 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.privacy-container,
+.mentions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 60px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.privacy-container h1,
+.mentions-container h1 {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.privacy-container h2,
+.mentions-container h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: var(--font-heading2);
+}
+
+.privacy-container p,
+.mentions-container p {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+.privacy-container ul,
+.mentions-container ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.privacy-container ul li,
+.mentions-container ul li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--color-cta);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-text);
+}
+
+.last-update {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* =================== Responsive =================== */
+
+@media screen and (max-width: 768px) {
+  .privacy-container,
+  .mentions-container {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .privacy-container h1,
+  .mentions-container h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container h2,
+  .mentions-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .privacy-container p,
+  .mentions-container p {
+    font-size: 15px;
+  }
+}

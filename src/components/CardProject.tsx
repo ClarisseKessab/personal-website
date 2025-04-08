@@ -1,37 +1,36 @@
-import projects from "@/data/projects.json";
+import Image from "next/image";
 
 type CardProjectProps = {
-  limit?: number;
+  title: string;
+  descard: string;
+  image: string;
+  emoji?: string;
+  tags?: string[];
 };
 
-export default function CardProject({ limit }: CardProjectProps) {
-
-  const displayedProjects = limit ? projects.slice(0, limit) : projects;
-
-  return(
-    <>
-      <div className="cards-project">
-        {displayedProjects.map((project) => (
-          <>
-            <a href={`/projets/${project.slug}`} className="card-project" key={project.id}>
-            <div className="container-image-card-project">
-            <div className="card-project-tags">
-                {project.tags.map((tag) => (
-                  <span className="card-project-tag" key={project.id}>{tag}</span>
-                  ))}
-              </div>
-              <img src={project.image} alt={`Presentation ${project.title}`} className="image-card-projet" />
-            </div>
-              <div className="card-project-texts">
-                <span className="type-card-project">{project.type}</span>
-                <h3 className="h3 card-projet-title">{project.title}</h3>
-                <p>{project.descard}</p>
-              </div>
-            </a>
-          </>
-        ))}
+export default function CardProject({ title, descard, image, emoji, tags }: CardProjectProps) {
+  return (
+    <div className="card-projet">
+      <div className="card-image-wrapper">
+        <Image
+          src={image}
+          alt={title}
+          width={340}
+          height={230}
+          className="card-photo-projet"
+        />
+        {tags && (
+          <div className="tag-badge-group">
+            {tags.map((tag) => (
+              <span key={tag} className="tag-badge">{tag}</span>
+            ))}
+          </div>
+        )}
       </div>
-    </>
+      <div className="card-projet-text">
+        <h3>{emoji ? `${emoji} ${title}` : title}</h3>
+        <p>{descard}</p>
+      </div>
+    </div>
   );
-
 }

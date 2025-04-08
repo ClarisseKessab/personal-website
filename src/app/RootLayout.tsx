@@ -35,8 +35,10 @@ export default function ClientLayout({
         />
     </Head>
       <Navbar isMobile={isMobile} />
-      <main className="flex-1 children">{children}</main>
-      <Footer />
+      <div id="__next" className="layout-wrapper">
+      <main className="main-content">{children}</main>
+      <Footer/>
+      </div>
     </>
   );
 }

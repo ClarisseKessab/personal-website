@@ -1,0 +1,91 @@
+/* === Highlights colorés === */
+.highlight-green {
+  background-color: var(--color-highlight);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.highlight-blue {
+  background-color: var(--color-cta);
+  color: var(--color-white);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.highlight-violet {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.highlight-black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
+/* === Couleurs de texte === */
+.text-green {
+  color: var(--color-highlight);
+}
+
+.text-blue {
+  color: var(--color-cta);
+}
+
+.text-violet {
+  color: var(--color-accent);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+/* === Dark mode adaptations === */
+.dark .highlight-green {
+  background-color: var(--color-highlight);
+  color: var(--color-black); /* meilleur contraste */
+}
+
+.dark .highlight-blue {
+  background-color: var(--color-cta);
+  color: var(--color-white);
+}
+
+.dark .highlight-violet {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.dark .highlight-black {
+  background-color: var(--color-white); /* inversé */
+  color: var(--color-black);
+}
+
+/* === Text colors en dark mode === */
+.dark .text-green {
+  color: var(--color-highlight);
+}
+
+.dark .text-blue {
+  color: var(--color-cta);
+}
+
+.dark .text-violet {
+  color: var(--color-accent);
+}
+
+.dark .text-black {
+  color: var(--color-white); /* inversé pour visibilité */
+}
+
+.dark .text-white {
+  color: var(--color-white);
+}

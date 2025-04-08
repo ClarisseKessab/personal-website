@@ -1,165 +1,44 @@
-.blur-little-blue{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 100px 100px #4e61f54c;
+/* ===================== BLURS ===================== */
+
+/* === Base === */
+.blur {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  max-width: 100vw;
+  overflow: hidden;
   border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.6;
   z-index: -1;
 }
 
-.blur-big-blue{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 200px 200px #4e61f54c;
-  border-radius: 50%;
-  z-index: -1;
 
+/* === Sizes === */
+.blur-small {
+  width: 120px;
+  height: 80px;
 }
 
-.blur-big-green{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 200px 200px #d7ff7b43;
-  border-radius: 50%;
-  z-index: -1;
-
+.blur-medium {
+  width: 200px;
+  height: 120px;
 }
 
-.blur-little-green{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 100px 100px #d7ff7b43;
-  border-radius: 50%;
-  z-index: -1;
-
+.blur-big {
+  width: 300px;
+  height: 200px;
 }
 
-.blur-big-violet{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 200px 200px #cc89ff59;
-  border-radius: 50%;
-  z-index: -1;
-
+/* === Colors === */
+.blur-green {
+  background-color: var(--color-highlight);
 }
 
-.blur-little-violet{
-  position: relative;
-  width: 0;
-  height: 0;
-  filter: blur(40px);
-  box-shadow: 0 0 100px 100px #cc89ff59;
-  border-radius: 50%;
-  z-index: -1;
-
+.blur-blue {
+  background-color: var(--color-cta);
 }
 
-.bigger-blur{
-  box-shadow: 0 0 300px 300px;
-}
-
-.left{
-  left:50px;
-
-}
-
-.right{
-  right:10px;
-}
-
-.right-10{
-  right:-1000px;
-}
-
-.right-5{
-  right:-400px;
-}
-
-.top{
-  top:100px;
-}
-
-.bottom{
-  bottom:100px;
-}
-
-.bottom-10{
-  bottom:1000px;
-}
-
-@media screen and (max-width: 768px) {
-  .blur-little-blue{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 50px 50px #4e61f54c;
-    border-radius: 50%;
-    z-index: -1;
-  }
-
-  .blur-big-blue{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 100px 100px #4e61f54c;
-    border-radius: 50%;
-    z-index: -1;
-
-  }
-
-  .blur-big-green{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 100px 100px #d7ff7b43;
-    border-radius: 50%;
-    z-index: -1;
-
-  }
-
-  .blur-little-green{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 50px 50px #d7ff7b43;
-    border-radius: 50%;
-    z-index: -1;
-
-  }
-
-  .blur-big-violet{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 100px 100px #cc89ff59;
-    border-radius: 50%;
-    z-index: -1;
-
-  }
-
-  .blur-little-violet{
-    position: relative;
-    width: 0;
-    height: 0;
-    filter: blur(40px);
-    box-shadow: 0 0 50px 50px #cc89ff59;
-    border-radius: 50%;
-    z-index: -1;
-
-  }
-
+.blur-violet {
+  background-color: var(--color-accent);
 }

@@ -1,55 +1,74 @@
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import useDarkMode from "../hooks/useDarkMode";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { isDark, toggleTheme } = useDarkMode();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
     if (isOpen) {
-      document.documentElement.classList.add("no-scroll");
-      document.body.classList.add("no-scroll");
+      html.classList.add("no-scroll");
+      body.classList.add("no-scroll");
     } else {
-      document.documentElement.classList.remove("no-scroll");
-      document.body.classList.remove("no-scroll");
+      html.classList.remove("no-scroll");
+      body.classList.remove("no-scroll");
     }
 
     return () => {
-      document.documentElement.classList.remove("no-scroll");
-      document.body.classList.remove("no-scroll");
+      html.classList.remove("no-scroll");
+      body.classList.remove("no-scroll");
     };
   }, [isOpen]);
 
   return (
     <div className="burger-menu">
-      <span onClick={toggleMenu} style={{ cursor: "pointer" }}>
-        <i className="fa-solid fa-bars"></i>
-      </span>
+      {/* NAV BAR */}
+      <div className="burger-top">
+        <Link href="/" aria-label="Retour à l'accueil">
+        <Image
+          src={isDark ? "/logo/logo-dark.png" : "/logo/logo-light.png"}
+          alt="Logo"
+          width={110}
+          height={28}
+          className="logo-img"
+          />
+          </Link>
 
+        <div className="burger-actions">
+          <button onClick={toggleTheme} className="btn-toggle-theme">
+            {isDark ? "☀️" : "🌙"}
+          </button>
+          <span onClick={toggleMenu} className="burger-icon">
+            <i className="fa-solid fa-bars" />
+          </span>
+        </div>
+      </div>
+
+      {/* MENU OVERLAY */}
       {isOpen && (
         <div className="overlay">
           <div className="close-burgernav" onClick={toggleMenu}>
             <i className="fa-solid fa-x"></i>
           </div>
           <div className="links-burgernav">
-
-            <Link className="link-burgernav" href="/" onClick={closeMenu}>
+            <Link href="/" className="link-burgernav" onClick={closeMenu}>
               Accueil
             </Link>
-            <Link className="link-burgernav" href="/projets" onClick={closeMenu}>
+            <Link href="/projets" className="link-burgernav" onClick={closeMenu}>
               Projets
             </Link>
-            <Link className="link-burgernav" href="/contact" onClick={closeMenu}>
+            <Link href="/contact" className="link-burgernav" onClick={closeMenu}>
               Contact
             </Link>
-            <Link className="btn btn-burger" href="/contact" onClick={closeMenu}>
+            <Link href="/contact" className="btn btn-primary" onClick={closeMenu}>
               Me contacter
             </Link>
           </div>

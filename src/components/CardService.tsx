@@ -1,22 +1,45 @@
-const services = [
-  { title: "Conception UI", desc:"Conception d'interfaces utilisateurs modernes et intuitives, centrées sur l'expérience utilisateur.", src: "🎨", alt: "Java", color:"green" },
-  { title: "Développement", desc:"Développement de sites et applications web sur mesure et performants", src: "💻", color:"violet" },
-  { title: "SEO", desc:"Optimisation SEO pour améliorer la visibilité et le classement sur les moteurs de recherche.", src: "⚙️", color:"blue" },
-];
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
-export default function CardService(){
-  return(
-    <>
-    <div className="cards-service">
-    {services.map((service, index) => (
-          <div className="element-service" key={index} style={{ backgroundColor: `var(--white)` }}>
-            <p className="icon-service">{service.src}</p>
-            <h3 className="h3 title-service">{service.title}</h3>
-            <p className="desc-service">{service.desc}</p>
-          </div>
-        ))}
+// Déclaration des props du composant CardService
+type CardServiceProps = {
+  iconLight: string;
+  iconDark: string;
+  alt: string;
+  title: string;
+  description: string;
+  isDark: boolean;
+};
+
+// Composant CardService
+export default function CardService({
+  iconLight,
+  iconDark,
+  alt,
+  title,
+  description,
+  isDark,
+}: CardServiceProps) {
+  // Déclaration d'un état local pour gérer l'icône en fonction du mode
+  const [currentIcon, setCurrentIcon] = useState(iconLight);
+
+  // Utilisation de useEffect pour mettre à jour l'icône lors du changement de mode
+  useEffect(() => {
+    setCurrentIcon(isDark ? iconDark : iconLight);
+  }, [isDark]); // Dépendance sur isDark pour déclencher l'effet au changement du mode
+
+  return (
+    <div className="card-service-content">
+      <Image
+        src={currentIcon} // Affichage de l'icône dynamique
+        alt={alt}
+        width={60}
+        height={60}
+      />
+      <div className="card-service-text">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
-    </>
   );
-
 }

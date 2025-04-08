@@ -1,8 +1,46 @@
+/* ================= NAV WRAPPER ================= */
+.burger-menu {
+  width: 100%;
+  padding-block: 20px;
+  position: relative;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.burger-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.burger-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-toggle-theme {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.burger-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* ================= OVERLAY ================= */
 html.no-scroll,
 body.no-scroll {
   overflow: hidden;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -11,44 +49,37 @@ body.no-scroll {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--white);
+  background-color: var(--color-bg);
   z-index: 999;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: auto; /* si besoin de scroll vertical */
 }
 
-.close-burgernav{
+.close-burgernav {
   font-size: 30px;
   position: absolute;
   top: 25px;
-  right:35px;
+  right: 50px;
+  cursor: pointer;
 }
 
 .links-burgernav {
   height: 100vh;
-  color: var(--dark);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:70px
+  gap: 70px;
+  text-align: center;
 }
 
 .link-burgernav {
-  font-size:25px;
+  font-size: 25px;
   font-weight: 600;
-}
-.btn-burger{
-  margin-top: 30px;
-}
-.fa-bars{
-  color:var(--dark);
-  font-size: 30px;
+  text-decoration: none;
 }
 
-.burger-menu{
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+.btn-burger {
+  margin-top: 30px;
 }

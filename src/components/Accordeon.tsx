@@ -1,78 +1,97 @@
-"use client"
+// Accordeon.tsx
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
+import useDarkMode from "../hooks/useDarkMode";
 
 interface Section {
   title: string;
   content: string;
-  imageUrl: string;
-  button: string;
-
+  imageUrlLight: string;
+  imageUrlDark: string;
 }
 
 const sections: Section[] = [
   {
-    "title": "Qui suis-je ?",
-    "content": "💡 Passionnée par le design et le développement web, j’allie créativité et technique pour donner vie à des expériences uniques.\n\n🎨💻 Développeuse Fullstack & UI Designer, je conçois des interfaces modernes, performantes et engageantes.\n\n🚀 Toujours en quête d’apprentissage, j’aime relever de nouveaux défis et explorer les dernières innovations du web.\n\n🌟 On dit de moi :\n✔️ Créative & Rigoureuse – J’allie esthétique et performance\n✔️ Curieuse & Ambitieuse – Toujours prête à apprendre et progresser\n✔️ Dynamique & Passionnée – Impossible de s’ennuyer avec moi !",
-    "imageUrl": "assets/accordeon/developpeur.png",
-    "button": "En savoir plus"
+    title: "On discute de votre projet",
+    content: "Un premier appel ou message pour poser les bases : on parle de ton activité, tes objectifs, ton public cible et l’image que tu veux transmettre. Je prends aussi note de ton univers graphique et de tes préférences en termes d’ergonomie. → L’objectif : cerner ta vision pour créer un site cohérent, utile et beau.",
+    imageUrlLight: "/etapes/icon-1-dark.png",
+    imageUrlDark: "/etapes/icon-1-light.png",
   },
   {
-    "title": "Expériences",
-    "content": "🎯 De la gestion de projet au développement, j’ai exploré plusieurs facettes du digital.\n\n🚀 Développement Web :\n- Création de 2 applications en Ruby on Rails & JavaScript\n- Optimisation de sites WordPress & Shopify\n\n💼 Gestion de projet :\n- 2 ans et demi en alternance\n- SEO & amélioration des performances\n- Création et refonte de sites\n- Accompagnement et relation client\n\n💻 Freelance :\n- Projets variés, adaptation et gestion des deadlines\n- Solutions sur-mesure selon les besoins clients",
-    "imageUrl": "assets/accordeon/experience.png",
-    "button": "Une nouvelle aventure ?"
+    title: "Je vous propose une solution claire",
+    content: "Je te propose la meilleure solution selon ton besoin : template personnalisé ou site sur-mesure. Tu reçois un document avec la structure du site (arborescence), les fonctionnalités, la méthodo design + dev, et les options SEO. Le tout avec un budget transparent et des délais précis.",
+    imageUrlLight: "/etapes/icon-2-dark.png",
+    imageUrlDark: "/etapes/icon-2-light.png",
   },
   {
-    "title": "Études",
-    "content": "📚 Un parcours hybride mêlant design, UI/UX et développement web.\n\n💻 Campus Academy – Premières bases en développement\n🎨 Webstart & MJM Graphics Design – Infographie & Webdesign\n🖥️ ECV Digital – Spécialisation UI/UX\n🚀 Le Wagon – Développement Fullstack (Bac+3)\n\nUn mix parfait entre créativité et technique !",
-    "imageUrl": "assets/accordeon/etudes.png",
-    "button": "Des questions ?"
+    title: "Je t’envoie une reco claire et sur-mesure",
+    content: "Design, intégration, responsive… Je construis votre site avec soin, dans les délais annoncés.",
+    imageUrlLight: "/etapes/icon-3-dark.png",
+    imageUrlDark: "/etapes/icon-3-light.png",
+  },
+  {
+    title: "Je conçois ton site de A à Z",
+    content: "Je crée l’interface (UI) en respectant ton identité visuelle, en m’appuyant sur de bonnes pratiques UX. Une fois validé, j’intègre tout (responsive & accessible), et j’optimise le site techniquement pour la performance (vitesse, SEO technique, mobile first). Tu suis l’avancée via un lien privé.",
+    imageUrlLight: "/etapes/icon-6-dark.png",
+    imageUrlDark: "/etapes/icon-6-light.png",
+  },
+  {
+    title: "Je te livre un site prêt à l’emploi",
+    content: "Ton site est en ligne ! Je t’envoie les accès + une vidéo tuto pour t’apprendre à gérer ton contenu (textes, images, etc.). Tout est pensé pour que tu sois autonome sans te perdre dans la technique.",
+    imageUrlLight: "/etapes/icon-4-dark.png",
+    imageUrlDark: "/etapes/icon-4-light.png",
+  },
+  {
+    title: "Suivi + SEO & maintenance",
+    content: "je reste dispo pour les petits ajustements. Et si tu veux aller plus loin : – Je peux t’accompagner sur ta stratégie SEO (balises, contenu, mots-clés) – Je propose aussi une maintenance mensuelle : mises à jour, surveillance, sécurité.",
+    imageUrlLight: "/etapes/icon-5-dark.png",
+    imageUrlDark: "/etapes/icon-5-light.png",
   }
-]
-
-;
+];
 
 const Accordeon: React.FC = () => {
-  const [selectedSection, setSelectedSection] = useState<Section>(sections[0]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const { isDark } = useDarkMode();
 
-  const handleSectionClick = (section: Section) => {
-    if (selectedSection?.title !== section.title) {
-      setSelectedSection(section);
-    }
+  const handleClick = (index: number) => {
+    setSelectedIndex(index);
   };
 
   return (
-    <>
-    <div className="accordeon">
-        <img src={selectedSection?.imageUrl} alt={selectedSection?.title} className="img-accordeon"/>
-      <div className="content-accordeon">
-        {sections.map((section, index) => (
-          <>
-          <div key={index} className="section-accordeon">
+    <div className="accordeon-wrapper">
+      <div className="accordeon-image">
+        <img
+          src={isDark ? sections[selectedIndex].imageUrlDark : sections[selectedIndex].imageUrlLight}
+          alt={sections[selectedIndex].title}
+        />
+      </div>
+      <div className="accordeon-content">
+        {sections.map((section, index) => {
+          const isActive = index === selectedIndex;
+          return (
             <div
-              className={`accordeon-texts section-title ${selectedSection?.title === section.title ? 'active' : ''}`}
-              onClick={() => handleSectionClick(section)}
+              className={`accordeon-item ${isActive ? "active" : ""} ${isDark ? "dark" : ""}`}
+              key={index}
+              onClick={() => handleClick(index)}
             >
-              <h3 className="h3">{section.title}</h3>
-              <span className="icon-accordeon">
-                {selectedSection?.title === section.title ? '−' : '+'}
-              </span>
-            </div>
-            {selectedSection?.title === section.title && (
-              <div className="accordeon-content">
-                <div className="accordeon-text-content">
+              <div className="accordeon-header">
+                <div className="accordeon-title-left">
+                  <div className="step-badge plain">{index + 1}.</div>
+                  <h3>{section.title}</h3>
+                </div>
+                <div className="icon-toggle">{isActive ? "−" : "+"}</div>
+              </div>
+              {isActive && (
+                <div className="accordeon-body">
                   <p>{section.content}</p>
                 </div>
-              </div>
-            )}
-          </div>
-          <div className="line-accordeon"></div>
-          </>
-        ))}
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
-    </>
   );
 };
 
