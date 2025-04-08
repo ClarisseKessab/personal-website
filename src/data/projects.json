@@ -2,8 +2,7 @@
   {
     "id": 5,
     "slug": "taste-explorers",
-    "meta-title": "Taste Explorers - Création d'application mobile en Ruby On Rails",
-    "meta-description": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
+    "metaDescription": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
     "title": "Taste Explorers",
     "description": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier. L'application permet aux hôtes de partager leurs traditions culinaires et aux explorateurs culinaires de découvrir de nouvelles saveurs lors de repas thématiques.",
     "descard": "Taste Explorers est une plateforme conviviale qui connecte les passionnés de cuisine du monde entier.",
@@ -35,8 +34,7 @@
   {
     "id": 4,
     "slug": "skybnb",
-    "meta-title": "SkyBnb - Clone d'Airbnb",
-    "meta-description": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes !",
+    "metaDescription": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes !",
     "title": "Skybnb",
     "description": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon. Notre twist unique ? Au lieu de proposer des locations d'appartements classiques, nous permettons aux utilisateurs de louer des îles flottantes fantastiques !",
     "descard": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon.",
@@ -69,8 +67,7 @@
   {
     "id": 3,
     "slug": "otravel",
-    "meta-title": "O'Travel - Planificateur de voyage",
-    "meta-description": "O'Travel est une application web permettant d'organiser ces voyages automatiquement. O'Travel prend en compte votre budget, les activités voulues et votre type de voyage. ",
+    "metaDescription": "O'Travel est une application web permettant d'organiser ces voyages automatiquement. O'Travel prend en compte votre budget, les activités voulues et votre type de voyage. ",
     "title": "O'Travel",
     "description": "Fini le casse-tête de l’organisation de voyage ! O'Travel est l’application qui transforme vos envies d’évasion en itinéraire parfait, adapté à votre budget, votre style de voyage et vos préférences d’activités. Que vous soyez aventurier, épicurien ou globe-trotteur curieux, notre algorithme intelligent vous propose des destinations et des expériences personnalisées en fonction de votre temps disponible et de vos envies du moment.",
     "descard": "SkyBnB est une application web inspirée d'Airbnb, développée dans le cadre du bootcamp Le Wagon.",

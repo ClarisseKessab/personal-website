@@ -2,6 +2,13 @@ import Link from "next/link"; // Importation du composant Link
 import projects from "@/data/projects.json";
 import CardProject from "@/components/CardProject";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Réalisations | Clarisse Dev",
+  description: "Découvrez mes réalisations en tant que freelance front-end et intégratrice web : projets responsives, optimisés SEO et au design UI soigné. Développement sur-mesure avec performance et accessibilité en priorité.",
+};
+
 export default function ProjectList() {
   return (
     <>

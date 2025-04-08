@@ -1,3 +1,10 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Confidentialités | Clarisse Dev",
+  description: "Politique de confidentialité du site clarissekessab.fr. Découvrez comment vos données sont collectées, stockées et protégées dans le cadre de mes services freelance en développement front-end et SEO.",
+};
+
 export default function PolitiqueConfidentialite() {
   return (
     <section className="privacy-policy">

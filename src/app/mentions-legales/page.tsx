@@ -1,3 +1,10 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Mentions Légales | Clarisse Dev",
+  description: "Mentions légales du site de Clarisse Kessab, freelance en développement front-end et intégration web. Informations légales, éditeur, hébergement et politique de confidentialité.",
+};
+
 export default function MentionsLegales() {
   return (
     <>

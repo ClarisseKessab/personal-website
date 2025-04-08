@@ -13,10 +13,26 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params
-  const projet = projets.find((p) => p.slug === slug)
-  return { title: projet?.title || 'Projet non trouvé' }
+  const { slug } = await params;
+  const projet = projets.find((p) => p.slug === slug);
+
+  return {
+    title: projet?.title || "Projet non trouvé",
+    description: projet?.metaDescription || projet?.description || "Projet réalisé par Clarisse Kessab.",
+    openGraph: {
+      title: projet?.title,
+      description: projet?.metaDescription || projet?.description,
+      images: projet?.image ? [{ url: projet.image }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: projet?.title,
+      description: projet?.metaDescription || projet?.description,
+      images: projet?.image ? [projet.image] : [],
+    },
+  };
 }
+
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params

@@ -1,5 +1,13 @@
 import ContactFormComponent from '@/components/ContactForm';
 
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact | Clarisse Dev",
+  description: "Une question, une opportunité ou juste envie d’échanger ? Contactez-moi facilement via ce formulaire.",
+};
+
 export default function ContactPage() {
   return (
     <>
