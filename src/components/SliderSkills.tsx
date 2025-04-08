@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import useDarkMode from "@/hooks/useDarkMode";
-
 const skills = [
   "Semrush",
   "Adobe Creative",
-  "Java",
+  "Page Speed Insights",
   "Html",
   "CSS",
   "Javascript",
@@ -18,13 +16,11 @@ const skills = [
 ];
 
 const SliderSkills: React.FC = () => {
-  const { isDark } = useDarkMode();
   const duplicatedSkills = [...skills, ...skills];
 
   const getImagePath = (name: string) => {
-    const folder = isDark ? "dark" : "light";
-    const formattedName = name.replace(/\s+/g, "%20"); // pour les espaces
-    return `/skills/${folder}/${formattedName}.png`;
+    const formattedName = name.replace(/\s+/g, "%20");
+    return `/skills/${formattedName}.png`;
   };
 
   return (

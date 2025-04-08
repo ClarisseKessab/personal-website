@@ -64,7 +64,6 @@
 .logo-skill {
   max-height: 30px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%);
   transition: filter 0.3s ease;
 }
 
@@ -76,7 +75,6 @@
 }
 
 .dark .logo-skill {
-  filter: brightness(0) invert(1);
 }
 
 .dark .text-skill {
