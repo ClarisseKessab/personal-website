@@ -1,6 +1,4 @@
-import ContactFormComponent from '@/components/ContactForm';
-
-
+import ContactFormWrapper from '@/components/ContactFormWrapper';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -29,7 +27,7 @@ export default function ContactPage() {
         </div>
 
         <div className="contact-form-wrapper">
-          <ContactFormComponent />
+          <ContactFormWrapper />
         </div>
       </div>
     </section>
