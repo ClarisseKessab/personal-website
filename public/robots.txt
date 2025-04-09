@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://clarissek-dev.fr
+
+# Sitemaps
+Sitemap: https://clarissek-dev.fr/sitemap.xml
