@@ -112,15 +112,20 @@
 /* ===================== Image principale ===================== */
 
 .container-img-projet {
-  margin: 40px auto;
-  padding-inline: 20px;
-  max-width: 1000px;
+  margin: 40px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-projet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border-radius: var(--radius-md);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 /* ===================== Stack ===================== */

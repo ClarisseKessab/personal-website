@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import projets from '../../../data/projects.json'
 
 
@@ -69,8 +70,17 @@ export default async function Page({ params }: PageProps) {
       <div className="blur blur-medium blur-blue" style={{ top: '1000px', right: '100px' }} />
 
       <div className="container-img-projet">
-        <img src={projet.image} alt={`Presentation ${projet.title}`} className="image-projet" />
-      </div>
+       <div className="image-projet-wrapper">
+       <Image
+  src={projet.image}
+  alt={`Présentation ${projet.title}`}
+  width={1500}
+  height={800}
+  className="image-projet"
+/>
+        </div>
+
+  </div>
 
       <div className="stack-section">
         <h2 className="h2">Technologies utilisées</h2>
