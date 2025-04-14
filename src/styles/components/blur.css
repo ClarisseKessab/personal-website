@@ -47,36 +47,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .blur-small {
-    width: 70px;
-    height: 50px;
-  }
-
-  .blur-medium {
-    width: 120px;
-    height: 80px;
-  }
-
-  .blur-big {
-    width: 160px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .blur-small {
-    width: 50px;
-    height: 35px;
-  }
-
-  .blur-medium {
-    width: 90px;
-    height: 60px;
-  }
-
-  .blur-big {
-    width: 120px;
-    height: 80px;
+  .blur{
+    opacity:0;
   }
 }
 
