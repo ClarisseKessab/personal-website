@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import Image from 'next/image'
+
 const skills = [
   "Semrush",
   "Adobe Creative",
@@ -28,7 +30,7 @@ const SliderSkills: React.FC = () => {
       <div className="skill-slider">
         {duplicatedSkills.map((skill, index) => (
           <div className="element-skill" key={index}>
-            <img src={getImagePath(skill)} alt={skill} className="logo-skill" />
+            <Image src={getImagePath(skill)} alt={skill} className="logo-skill" width={20} height={100}/>
             <span className="text-skill">{skill}</span>
           </div>
         ))}
