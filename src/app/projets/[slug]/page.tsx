@@ -1,6 +1,8 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import projets from '../../../data/projects.json'
+export const dynamic = 'force-static';
+
 
 
 interface PageProps {

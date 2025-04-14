@@ -1,6 +1,8 @@
 import Link from "next/link"; // Importation du composant Link
 import projects from "@/data/projects.json";
 import CardProject from "@/components/CardProject";
+export const dynamic = 'force-static';
+
 
 import { Metadata } from 'next';
 

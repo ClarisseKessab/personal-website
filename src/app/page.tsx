@@ -9,6 +9,8 @@ import projects from "@/data/projects.json";
 import Accordeon from "@/components/Accordeon";
 import CardReview from "@/components/CardReview";
 import Link from "next/link";
+export const dynamic = 'force-static';
+
 
 
 export default function Home() {

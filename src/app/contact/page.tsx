@@ -1,6 +1,9 @@
 import ContactFormWrapper from '@/components/ContactFormWrapper';
 import { Metadata } from 'next';
 
+export const dynamic = 'force-static';
+
+
 export const metadata: Metadata = {
   title: "Contact | Clarisse Dev",
   description: "Une question, une opportunité ou juste envie d’échanger ? Contactez-moi facilement via ce formulaire.",
