@@ -113,7 +113,7 @@
     "brief":"Projet final réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de créer une application web complète en 10 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Application Mobile",
     "projet":"Wagon",
-    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css"],
+    "stack":["Ruby On Rails", "Javascript", "Github", "Html", "Css"],
     "features": [
       " 🍽️ Organisation de repas thématiques autour des cuisines du monde",
       " 📅 Système de réservation pour les convives",
@@ -139,7 +139,7 @@
     "brief":"Projet réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de recréer totalement Airbnb en 5 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Développement",
     "projet":"Wagon",
-    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css"],
+    "stack":["Ruby On Rails", "Javascript", "Github", "Html", "Css"],
     "features": [
       " 🍽️ Authentification utilisateur (connexion/inscription)",
       " 📅 Recherche d'îles flottantes par localisation",
