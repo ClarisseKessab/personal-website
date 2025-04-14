@@ -22,7 +22,7 @@ const SliderSkills: React.FC = () => {
 
   const getImagePath = (name: string) => {
     const formattedName = name.replace(/\s+/g, "%20");
-    return `/skills/${formattedName}.png`;
+    return `/skills/${formattedName}.svg`;
   };
 
   return (
