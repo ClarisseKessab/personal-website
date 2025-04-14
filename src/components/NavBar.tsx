@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMobile }) => {
           </div>
 
           <div className="nav-actions">
-            <a href="#contact" className="btn btn-primary">Me contacter</a>
+            <a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte">Prendre RDV</a>
             <button onClick={toggleTheme} className="btn-toggle-theme" aria-label="Changer de thème">
               {isDark ? "☀️" : "🌙"}
             </button>

@@ -4,7 +4,7 @@
 import Image from 'next/image'
 
 const skills = [
-  "Semrush",
+  "SemRush",
   "Adobe Creative",
   "Page Speed Insights",
   "Html",
@@ -15,6 +15,8 @@ const skills = [
   "Ruby On Rails",
   "Webflow",
   "Figma",
+  "Google Analytics",
+  "Github"
 ];
 
 const SliderSkills: React.FC = () => {

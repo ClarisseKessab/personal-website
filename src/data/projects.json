@@ -1,6 +1,97 @@
 [
   {
+    "id": 7,
+    "slug": "lueurs-dorees",
+    "metaDescription": "Création d’un site vitrine Webflow élégant pour Lueurs Dorées, une marque de bijoux artisanaux. Design épuré, navigation fluide et responsive.",
+    "title": "Lueurs Dorées",
+    "description": "Lueurs Dorées est une marque de bijoux artisanaux qui souhaitait mettre en valeur ses créations dans un univers doux, raffiné et naturel. J’ai conçu un site vitrine 100% responsive sur Webflow, en misant sur une esthétique minimaliste pour faire ressortir les visuels produits. L’objectif principal : une expérience simple, immersive, sans distraction — où chaque pièce puisse raconter sa propre histoire. Le site est facilement modifiable par la cliente via l’interface Webflow, et optimisé pour mobile.",
+    "descard": "Site vitrine Webflow raffiné pour une marque de bijoux faits main, avec design épuré et navigation fluide.",
+    "duration":"1 semaine",
+    "team":[],
+    "image": "/lueurs-dorees/Lueurs Dorées.png",
+    "images": [
+      "/lueurs-dorees/1.png",
+      "/lueurs-dorees/2.png",
+      "/lueurs-dorees/3.png"
+    ],
+    "brief":"La cliente voulait un site simple, clair et élégant pour présenter ses bijoux faits main. Le design devait refléter son univers doux et naturel, tout en permettant une autonomie totale dans la gestion du contenu via Webflow.",
+    "type":"Développement",
+    "projet":"Client freelance",
+    "stack":["Webflow", "Figma"],
+    "features": [
+      "💎 Design élégant & minimaliste centré sur les produits",
+      "📱 Responsive complet (mobile / tablette / desktop)",
+      "🧭 Navigation fluide et intuitive",
+      "⚙️ Site éditable facilement via Webflow",
+      "📸 Intégration d’une galerie visuelle immersive",
+      "🔍 Optimisation légère pour le référencement naturel"
+    ],
+    "demo": "x",
+    "tags":["Développement","Design UI","Webflow" ]
+  },
+  {
+    "id": 6,
+    "slug": "electron-libre",
+    "metaDescription": "Refonte moderne d’un site WordPress pour une agence de communication en Moselle, à partir d’un thème existant.",
+    "title": "Electron Libre",
+    "description": "Electron Libre est une agence de communication située en Moselle. Le projet consistait à repenser leur site WordPress existant en adaptant un thème choisi pour en faire un site moderne, fluide et à l’image de leur dynamisme local. L’objectif était de rendre le site plus professionnel, responsive, et attractif pour leurs futurs clients.",
+    "descard": "Site WordPress repensé pour une agence de communication mosellane, avec design clair et navigation efficace.",
+    "duration": "1 semaine",
+    "team":[],
+    "image": "/electron-libre/Electron Libre.png",
+    "images": [
+      "/electron-libre/1.png",
+      "/electron-libre/2.png",
+      "/electron-libre/3.png",
+      "/electron-libre/4.png"
+    ],
+    "brief": "L'agence souhaitait une refonte rapide et professionnelle de son site vitrine, tout en conservant la base d’un thème WordPress existant. J’ai travaillé sur l’identité visuelle, la structure des pages, l’harmonie des couleurs et l’optimisation mobile.",
+    "type": "Refonte",
+    "projet": "Client freelance",
+    "stack": ["Wordpress", "Figma"],
+    "features": [
+      " 🎨 Refonte graphique en cohérence avec l'identité de l'agence",
+      " 🧱 Structure claire pour mettre en avant leurs services",
+      " 📱 Design 100% responsive",
+      " ⚡ Optimisation de la vitesse de chargement",
+      " 🌐 Reprise et intégration du contenu existant"
+    ],
+    "demo":"https://electronlibre-agence.com/",
+    "tags": ["Refonte", "WordPress", "Agence", "Site vitrine"]
+  },
+  {
     "id": 5,
+    "slug": "bruma-coffee",
+    "metaDescription": "Création d’un site vitrine Webflow pour Bruma Coffee, un coffee shop éthique et indépendant. Design doux, couleur café et expérience fluide.",
+    "title": "Bruma Coffee",
+    "description": "Bruma Coffee est un coffee shop français engagé, qui souhaitait mettre en avant ses valeurs éthiques, son savoir-faire artisanal et ses produits de qualité. L’objectif du projet était de créer un site vitrine au ton doux, chaleureux, dans des teintes café et crème, tout en valorisant les engagements environnementaux et la production locale. J’ai réalisé l’intégralité du design (UI) ainsi que le développement sur Webflow, avec une navigation fluide, des animations légères et une expérience optimisée pour mobile. Le site est facilement administrable, avec possibilité d’évolution vers une boutique ou un blog.",
+    "descard": "Site vitrine chaleureux pour un coffee shop indépendant, designé et développé sous Webflow.",
+    "duration":"1 semaine",
+    "team":[],
+    "image": "/bruma-coffee/Bruma Coffee.png",
+    "images": [
+      "/bruma-coffee/1.png",
+      "/bruma-coffee/2.png",
+      "/bruma-coffee/3.png",
+      "/bruma-coffee/4.png"
+    ],
+    "brief":"Bruma Coffee avait besoin d’un site simple, lisible et élégant pour présenter son lieu, ses valeurs et ses produits artisanaux. Le tout dans une ambiance chaleureuse, moderne et alignée avec son identité visuelle.",
+    "type":"Développement",
+    "projet":"Client freelance",
+    "stack":["Webflow", "Figma"],
+    "features": [
+      "☕ Design naturel & couleurs café",
+      "🌱 Mise en avant des engagements environnementaux",
+      "🗺️ Carte & fausse adresse pour découvrir le coffee shop",
+      "📱 Responsive design complet",
+      "🧭 Navigation simple, fluide et immersive",
+      "🔍 SEO optimisé pour les recherches locales"
+    ],
+    "demo": "x",
+    "tags":["Développement","Design UI","Webflow" ]
+  },
+  {
+    "id": 4,
     "slug": "taste-explorers",
     "metaDescription": "Taste Explorers est une application mobile permettant de mettre en relation des passionées de cuisine. Cette application est développé en Ruby On Rails et Javascript.",
     "title": "Taste Explorers",
@@ -20,9 +111,9 @@
       "/taste-explorers/8.png"
     ],
     "brief":"Projet final réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de créer une application web complète en 10 jours, en utilisant toutes les compétences acquises durant la formation.",
-    "type":"Développement",
+    "type":"Application Mobile",
     "projet":"Wagon",
-    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku","OpenAI"],
+    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css"],
     "features": [
       " 🍽️ Organisation de repas thématiques autour des cuisines du monde",
       " 📅 Système de réservation pour les convives",
@@ -32,7 +123,7 @@
     "tags":["Développement","Fullstack","Application Mobile" ]
   },
   {
-    "id": 4,
+    "id": 3,
     "slug": "skybnb",
     "metaDescription": "SkyBnB est une application web inspirée d'Airbnb. Notre twist unique ? Au lieu de proposer des locations d'appartements, nous permettons aux utilisateurs de louer des îles flottantes !",
     "title": "Skybnb",
@@ -42,19 +133,13 @@
     "team":["Clarisse", "Mathieu.L", "Guillaume.A", "Kevin.I"],
     "image": "/Skybnb/Skybnb.png",
     "images": [
-      "/taste-explorers/1.png",
-      "/taste-explorers/2.png",
-      "/taste-explorers/3.png",
-      "/taste-explorers/4.png",
-      "/taste-explorers/5.png",
-      "/taste-explorers/6.png",
-      "/taste-explorers/7.png",
-      "/taste-explorers/8.png"
+      "/Skybnb/1.png",
+      "/Skybnb/2.png"
     ],
     "brief":"Projet réalisé durant le bootcamp Le Wagon, batch #1823. Le défi était de recréer totalement Airbnb en 5 jours, en utilisant toutes les compétences acquises durant la formation.",
     "type":"Développement",
     "projet":"Wagon",
-    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css", "PostegreSQL","Heroku"],
+    "stack":["Ruby On Rails", "JavaScript", "Github", "Html", "Css"],
     "features": [
       " 🍽️ Authentification utilisateur (connexion/inscription)",
       " 📅 Recherche d'îles flottantes par localisation",
@@ -65,7 +150,7 @@
     "tags":["Développement","Fullstack","Application web" ]
   },
   {
-    "id": 3,
+    "id": 2,
     "slug": "otravel",
     "metaDescription": "O'Travel est une application web permettant d'organiser ces voyages automatiquement. O'Travel prend en compte votre budget, les activités voulues et votre type de voyage. ",
     "title": "O'Travel",
@@ -83,7 +168,7 @@
     "brief":"Projet réalisé dans le cadre de mon projet de fin d’études en UI/UX Design. Le défi était de concevoir une application de A à Z, en appliquant toutes les compétences acquises : recherche utilisateur, wireframing, prototypage et design d’interface.",
     "type":"Design UI",
     "projet":"ECV",
-    "stack":["Figma", "AdobeCreative", "Wordpress", "Webflow"],
+    "stack":["Figma", "Adobe Creative", "Wordpress", "Webflow"],
     "features": [
       " ✅ Suggestions 100% personnalisées",
       " ✅ Optimisation du budget et du temps",
@@ -92,6 +177,37 @@
     ],
     "demo": "https://www.figma.com/proto/DuCJafEEU2hbjJ4Aiie0XR/O'Travel?node-id=70-2&t=OVwYSVZlUaaMC9RU-1",
     "tags":["Design UI","Front-End","Application web" ]
+  },
+  {
+    "id": 1,
+    "slug": "copkers",
+    "metaDescription": "Création de l’identité visuelle complète de Copkers, une marque de streetwear. Logo, palette, direction artistique et maquette UI type lookbook.",
+    "title": "Copkers",
+    "description": "Copkers est une marque fictive de streetwear que j’ai imaginée de A à Z : de la création du logo à la conception d’un site lookbook en maquette haute fidélité. L’univers visuel repose sur des codes urbains, minimalistes et affirmés : typographies marquées, palette sombre avec touches néon, photos plein écran et mise en page inspirée des magazines mode. J’ai pensé chaque détail pour offrir une expérience de marque forte, visuelle et percutante — un vrai terrain d’expression graphique autour d’une marque fictive inspirée du streetwear.",
+    "descard": "Identité de marque forte et lookbook UI designé pour une marque de streetwear, au style minimaliste et graphique.",
+    "duration":"2 mois",
+    "team":[],
+    "image": "/Copkers/Copkers.png",
+    "images": [
+      "/Copkers/1.png",
+      "/Copkers/2.png",
+      "/Copkers/3.png",
+      "/Copkers/4.png"
+    ],
+    "brief":"Imaginer une marque fictive de streetwear et concevoir son univers visuel + une maquette UI type lookbook. Un projet orienté direction artistique.",
+    "type":"Design UI",
+    "projet":"MJM",
+    "stack":["Figma", "Adobe Creative", "Wordpress"],
+    "features": [
+      "🔥 Création complète d’une identité de marque",
+      "🎨 Logo, palette, typographies & ton visuel",
+      "📐 Maquette UI en haute fidélité (Figma)",
+      "🖤 Style lookbook / streetwear minimaliste",
+      "📰 Mises en page inspirées des magazines de mode",
+      "👟 Focus produit & ambiance urbaine"
+    ],
+    "demo": "",
+    "tags":["Design UI","Front-End","Branding" ]
   }
 
 ]

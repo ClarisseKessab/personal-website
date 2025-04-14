@@ -37,9 +37,9 @@ export default function ProjectList() {
                 descard={project.descard}
                 image={project.image}
                 emoji={
-                  project.tags.includes("Application Mobile")
+                  project.type.includes("Application Mobile")
                     ? "📱"
-                    : project.tags.includes("Design UI")
+                    : project.type.includes("Design UI")
                     ? "🎨"
                     : "💻"
                 }
@@ -52,7 +52,7 @@ export default function ProjectList() {
         <div className="cta-card">
           <h2>Envie de donner vie à votre projet ? 🚀</h2>
           <p>Un café virtuel pour en discuter, ça vous tente ?</p>
-          <a href="/contact" className="btn-primary">Prendre rendez-vous</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn-primary">Prendre rendez-vous</a>
         </div>
     </div>
     </>

@@ -31,7 +31,7 @@ export default function Home() {
               <p className="h3">UI Design ✶ Développement ✶ SEO</p>
             </div>
           </div>
-          <a className="btn-primary">Prenons un café ensemble</a>
+          <a className="btn-primary" target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte">Discutons ensemble</a>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
             title={project.title}
             descard={project.descard}
             image={project.image}
-            emoji={project.tags.includes("Application Mobile") ? "📱" : project.tags.includes("Design UI") ? "🎨" : "💻"}
+            emoji={project.type.includes("Application Mobile") ? "📱" : project.type.includes("Design UI") ? "🎨" : "💻"}
             tags={project.tags}
           />
           </Link>
@@ -149,7 +149,7 @@ Travailler avec elle a été super fluide — je recommande sans hésiter !"
         <div className="cta-card">
           <h2>Envie de donner vie à votre projet ? 🚀</h2>
           <p>Un café virtuel pour en discuter, ça vous tente ?</p>
-          <a href="/contact" className="btn-primary">Prendre rendez-vous</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn-primary">Prendre rendez-vous</a>
         </div>
     </div>
     </>

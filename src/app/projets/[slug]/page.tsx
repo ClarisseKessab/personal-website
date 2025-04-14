@@ -48,6 +48,7 @@ export default async function Page({ params }: PageProps) {
   const projetUrl = projet.demo;
 
   const getButtonText = (url: string): string => {
+    if (url.startsWith("x")) return "Le site n'est pas encore en ligne";
     if (url.startsWith("https://github.com/")) return "Voir le GitHub";
     if (url.startsWith("https://canva.com")) return "Voir la présentation";
     if (url.startsWith("https://notion.so/")) return "Voir le Notion";
@@ -89,7 +90,7 @@ export default async function Page({ params }: PageProps) {
         <div className="stack-group">
           {projet.stack.map((stack, index) => (
             <div className="element-skill" key={index}>
-              <Image src={`/skills/${stack}.png`} alt={projet.title} className="logo-skill" width={20} height={100}/>
+              <Image src={`/skills/${stack}.svg`} alt={projet.title} className="logo-skill" width={20} height={100}/>
               <span className="text-skill">{stack}</span>
             </div>
           ))}
@@ -123,6 +124,13 @@ export default async function Page({ params }: PageProps) {
           ))}
         </div>
       </div>
+      <div className="section-cta">
+        <div className="cta-card">
+          <h2>Envie de donner vie à votre projet ? 🚀</h2>
+          <p>Un café virtuel pour en discuter, ça vous tente ?</p>
+          <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn-primary">Prendre rendez-vous</a>
+        </div>
+    </div>
     </>
   );
 }
