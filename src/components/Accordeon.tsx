@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from 'next/image';
 import useDarkMode from "../hooks/useDarkMode";
 
 interface Section {
@@ -61,9 +62,10 @@ const Accordeon: React.FC = () => {
   return (
     <div className="accordeon-wrapper">
       <div className="accordeon-image">
-        <img
+        <Image
           src={isDark ? sections[selectedIndex].imageUrlDark : sections[selectedIndex].imageUrlLight}
           alt={sections[selectedIndex].title}
+          width={800} height={800}
         />
       </div>
       <div className="accordeon-content">

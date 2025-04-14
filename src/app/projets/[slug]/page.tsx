@@ -87,7 +87,7 @@ export default async function Page({ params }: PageProps) {
         <div className="stack-group">
           {projet.stack.map((stack, index) => (
             <div className="element-skill" key={index}>
-              <img src={`/skills/${stack}.png`} alt={projet.title} className="logo-skill" />
+              <Image src={`/skills/${stack}.png`} alt={projet.title} className="logo-skill" width={20} height={100}/>
               <span className="text-skill">{stack}</span>
             </div>
           ))}
@@ -116,7 +116,7 @@ export default async function Page({ params }: PageProps) {
         <div className="photos-group">
           {projet.images.map((image, index) => (
             <div className="photo-projet" key={index}>
-              <img src={image} alt={`Image ${index + 1}`} className="img-projet" />
+              <Image src={image} alt={`Image ${index + 1}`} className="img-projet" width={200} height={100}/>
             </div>
           ))}
         </div>
