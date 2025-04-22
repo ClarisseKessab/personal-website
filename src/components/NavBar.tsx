@@ -36,6 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMobile }) => {
           <div className="links-nav">
             <Link href="/" className={pathname === "/" ? "link-active" : "link-p"}>Accueil</Link>
             <Link href="/projets" className={pathname === "/projets" ? "link-active" : "link-p"}>Projets</Link>
+            {/* <Link href="/blog" className={pathname === "/blog" ? "link-active" : "link-p"}>Blog</Link> */}
             <Link href="/contact" className={pathname === "/contact" ? "link-active" : "link-p"}>Contact</Link>
           </div>
 

@@ -65,6 +65,9 @@ const BurgerMenu = () => {
             <Link href="/projets" className="link-burgernav" onClick={closeMenu}>
               Projets
             </Link>
+            {/* <Link href="/blog" className="link-burgernav" onClick={closeMenu}>
+              Blog
+            </Link> */}
             <Link href="/contact" className="link-burgernav" onClick={closeMenu}>
               Contact
             </Link>

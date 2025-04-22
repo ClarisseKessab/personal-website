@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Mentions Légales | Clarisse Dev",
+  title: "Mentions Légales | Clarisse K",
   description: "Mentions légales du site de Clarisse Kessab, freelance en développement front-end et intégration web. Informations légales, éditeur, hébergement et politique de confidentialité.",
 };
 

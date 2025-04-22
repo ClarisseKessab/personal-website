@@ -63,6 +63,8 @@
 @import './components/blur.css';
 @import './components/navbar.css';
 @import './components/details.css';
+@import './components/cardArticle.css';
+@import './components/markdown.css';
 
 /* Pages */
 @import './pages/accueil.css';

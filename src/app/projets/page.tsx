@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Réalisations | Clarisse Dev",
+  title: "Retrouvez mes réalisations | Clarisse K",
   description: "Découvrez mes réalisations en tant que freelance front-end et intégratrice web : projets responsives, optimisés SEO et au design UI soigné. Développement sur-mesure avec performance et accessibilité en priorité.",
 };
 

@@ -1,0 +1,26 @@
+
+.markdown {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  font-family: var(--font-heading);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown p {
+  margin-bottom: 1em;
+}
+
+.markdown ul {
+  list-style: disc;
+  margin-left: 1.5em;
+}
+
+.markdown a {
+  color: var(--color-cta);
+  text-decoration: underline;
+}
