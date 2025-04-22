@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 
 
 export const metadata: Metadata = {
-  title: "Contact | Clarisse Dev",
+  title: "Pour me contacter, c'est ici | Clarisse K",
   description: "Une question, une opportunité ou juste envie d’échanger ? Contactez-moi facilement via ce formulaire.",
 };
 
