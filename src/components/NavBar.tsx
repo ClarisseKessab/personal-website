@@ -5,6 +5,7 @@ import Image from "next/image";
 import BurgerMenu from "../components/BurgerMenu";
 import { usePathname } from "next/navigation";
 import useDarkMode from "../hooks/useDarkMode";
+import { handleCalendlyClick } from "@/utils/handleCalendlyClick";
 
 interface NavbarProps {
   isMobile: boolean;
@@ -41,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMobile }) => {
           </div>
 
           <div className="nav-actions">
-            <a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte">Prendre RDV</a>
+            <a className="btn btn-primary" onClick={handleCalendlyClick}>Prendre RDV</a>
             <button onClick={toggleTheme} className="btn-toggle-theme" aria-label="Changer de thème">
               {isDark ? "☀️" : "🌙"}
             </button>

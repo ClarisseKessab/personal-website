@@ -71,8 +71,8 @@ const BurgerMenu = () => {
             <Link href="/contact" className="link-burgernav" onClick={closeMenu}>
               Contact
             </Link>
-            <Link href="/contact" className="btn btn-primary" onClick={closeMenu}>
-              Me contacter
+            <Link href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn btn-primary" onClick={closeMenu}>
+              Prendre RDV
             </Link>
           </div>
         </div>
