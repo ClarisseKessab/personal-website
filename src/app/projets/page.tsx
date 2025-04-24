@@ -5,6 +5,7 @@ export const dynamic = 'force-static';
 
 
 import { Metadata } from 'next';
+import { handleCalendlyClick } from "@/utils/handleCalendlyClick";
 
 export const metadata: Metadata = {
   title: "Retrouvez mes réalisations | Clarisse K",
@@ -52,7 +53,7 @@ export default function ProjectList() {
         <div className="cta-card">
           <h2>Envie de donner vie à votre projet ? 🚀</h2>
           <p>Un café virtuel pour en discuter, ça vous tente ?</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn-primary">Prendre rendez-vous</a>
+          <a onClick={handleCalendlyClick} className="btn-primary">Prendre rendez-vous</a>
         </div>
     </div>
     </>

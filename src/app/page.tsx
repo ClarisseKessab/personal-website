@@ -9,6 +9,7 @@ import projects from "@/data/projects.json";
 import Accordeon from "@/components/Accordeon";
 import CardReview from "@/components/CardReview";
 import Link from "next/link";
+import { handleCalendlyClick } from "@/utils/handleCalendlyClick";
 export const dynamic = 'force-static';
 
 
@@ -31,7 +32,7 @@ export default function Home() {
               <p className="h3">UI Design ✶ Développement ✶ SEO</p>
             </div>
           </div>
-          <a className="btn-primary" target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte">Discutons ensemble</a>
+          <a className="btn-primary" onClick={handleCalendlyClick}>Discutons ensemble</a>
         </div>
       </div>
 
@@ -149,7 +150,7 @@ Travailler avec elle a été super fluide — je recommande sans hésiter !"
         <div className="cta-card">
           <h2>Envie de donner vie à votre projet ? 🚀</h2>
           <p>Un café virtuel pour en discuter, ça vous tente ?</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/clarisse-freelance/appel-decouverte" className="btn-primary">Prendre rendez-vous</a>
+          <a className="btn-primary" onClick={handleCalendlyClick}>Prendre rendez-vous</a>
         </div>
     </div>
     </>
