@@ -10,8 +10,8 @@ type PageProps = {
   };
 };
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const article = await getArticleBySlug(params.slug); // <= si async
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const article = await getArticleBySlug(params.slug);
   if (!article) return {};
 
   return {
@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: article.metaDescription,
   };
 }
+
 
 export default async function ArticlePage({ params }: PageProps) {
   const article = await getArticleBySlug(params.slug); // <= si async
