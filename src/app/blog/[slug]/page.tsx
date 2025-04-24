@@ -4,14 +4,14 @@ import { Metadata } from "next";
 import { marked } from "marked";
 import "@/styles/components/markdown.css";
 
-interface Props {
+type PageProps = {
   params: {
     slug: string;
   };
-}
+};
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const article = getArticleBySlug(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const article = await getArticleBySlug(params.slug); // <= si async
   if (!article) return {};
 
   return {
@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ArticlePage({ params }: Props) {
-  const article = getArticleBySlug(params.slug);
+export default async function ArticlePage({ params }: PageProps) {
+  const article = await getArticleBySlug(params.slug); // <= si async
   if (!article) return notFound();
 
-  const htmlContent = marked(article.content);
+  const htmlContent = marked.parse(article.content); // .parse au lieu de simple call
 
   return (
     <div className="projet-title">
