@@ -51,39 +51,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen h-full`}
         suppressHydrationWarning
       >
-        {/* Google Analytics 4 */}
+        {/* Google Analytics + Google Ads */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
         <Script
-          id="google-analytics"
+          id="gtag-init"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+
               gtag('config', '${GA_TRACKING_ID}', {
                 page_path: window.location.pathname,
               });
-            `,
-          }}
-        />
 
-        {/* Google Ads Conversion Tracking */}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TRACKING_ID}`}
-        />
-        <Script
-          id="google-ads"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
               gtag('config', '${ADS_TRACKING_ID}');
             `,
           }}
