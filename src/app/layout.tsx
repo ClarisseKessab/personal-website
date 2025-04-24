@@ -1,11 +1,9 @@
-// layout.tsx (serveur)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import RootLayout from "./RootLayout";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,15 +40,18 @@ export const viewport = {
   initialScale: 1,
 };
 
+// Tracking IDs
 const GA_TRACKING_ID = "G-6EQ9MH1JPJ";
+const ADS_TRACKING_ID = "AW-17031568396";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen h-full` }
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen h-full`}
         suppressHydrationWarning
       >
+        {/* Google Analytics 4 */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -69,6 +70,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             `,
           }}
         />
+
+        {/* Google Ads Conversion Tracking */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TRACKING_ID}`}
+        />
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${ADS_TRACKING_ID}');
+            `,
+          }}
+        />
+
         <RootLayout>{children}</RootLayout>
       </body>
     </html>
