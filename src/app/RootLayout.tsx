@@ -29,10 +29,21 @@ export default function ClientLayout({
   return (
     <>
     <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17031568396"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17031568396');
+          `,
+        }}
+      />
     </Head>
       <Navbar isMobile={isMobile} />
       <div id="__next" className="layout-wrapper">
